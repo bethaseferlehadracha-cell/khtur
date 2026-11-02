@@ -523,6 +523,75 @@ table.pt{ width:100%; border-collapse:collapse; font-size:13.5px; }
   .rhead{ flex-wrap:wrap; }
 }
 @media (max-width:760px){ .mu-appbar-brand small{ display:none; } .mu-appbar-actions{ gap:6px; } .mu-appbar-actions .mu-btn{ padding:6px 10px; font-size:12.5px; white-space:nowrap; } .userchip{ max-width:96px; overflow:hidden; text-overflow:ellipsis; } }
+
+/* ===== תו תקן ===== */
+.neg{ color:var(--mu-no); } .pos{ color:var(--mu-ok); } .sm{ font-size:12.5px; }
+.stdks{ display:grid; grid-template-columns:repeat(3,1fr); gap:var(--gap); margin-bottom:var(--gap); }
+.stdk{ text-decoration:none; color:var(--mu-fg); display:grid; gap:6px; }
+.stdk .lbl{ font-size:15px; font-weight:800; color:var(--mu-ink1); }
+.stdk .big{ display:flex; align-items:baseline; gap:8px; } .stdk .big b{ font-size:44px; font-weight:800; letter-spacing:-1.5px; line-height:1; color:var(--mu-ink1); } .stdk .big b.neg{ color:var(--mu-no); } .stdk .big span{ color:var(--mu-muted); font-size:13.5px; }
+.stdk .sub{ font-size:13px; color:var(--mu-muted); }
+.qline{ display:grid; grid-template-columns:auto 1fr auto auto; gap:8px; align-items:center; font-size:12.5px; margin-top:6px; padding-top:10px; border-top:1px solid var(--mu-border); }
+.qline .bar{ height:6px; } .qline .bar i{ background:var(--mu-ink2); border-radius:99px; } .qline small{ color:var(--mu-muted); }
+.fillbar .bar{ height:6px; margin-bottom:6px; } .fillbar .bar i{ background:var(--mu-ok); border-radius:99px; }
+.stdt td{ vertical-align:middle; } .stdt th small{ font-weight:500; }
+.hr{ font-variant-numeric:tabular-nums; font-weight:700; margin-inline-end:8px; }
+.gchip{ display:inline-block; font-size:11.5px; font-weight:700; padding:2px 8px; border-radius:99px; white-space:nowrap; }
+.gchip.no{ background:var(--mu-no-soft); color:var(--mu-no); } .gchip.ok{ background:var(--mu-ok-soft); color:var(--mu-ok); }
+.gchip.wait{ background:var(--mu-wait-soft); color:var(--mu-wait); } .gchip.info{ background:var(--mu-c1); color:var(--mu-ink1); } .gchip.na{ background:var(--mu-subtle); color:var(--mu-muted); }
+.stdwrap{ display:grid; grid-template-columns:360px 1fr; gap:var(--gap); align-items:start; }
+.qcard{ position:sticky; top:84px; }
+.qsec{ font-size:12px; font-weight:800; color:var(--mu-ink1); margin:14px 0 8px; padding-bottom:4px; border-bottom:1px solid var(--mu-border); }
+.qcard .qsec:first-of-type{ margin-top:4px; }
+.ngrid{ display:grid; grid-template-columns:1fr 1fr; gap:8px; }
+.nfld{ display:grid; gap:3px; font-size:12.5px; color:var(--mu-muted); font-weight:600; }
+.nfld small{ display:block; font-weight:400; font-size:11px; }
+.nfld input{ font:inherit; font-size:16px; font-weight:700; color:var(--mu-ink1); background:var(--mu-subtle); border:1px solid transparent; border-radius:9px; padding:7px 10px; width:100%; box-sizing:border-box; font-variant-numeric:tabular-nums; }
+.nfld input:focus{ outline:2px solid var(--mu-ink3); background:var(--mu-card); }
+.rcard{ margin-bottom:var(--gap); }
+.rhead2{ display:flex; justify-content:space-between; align-items:center; gap:10px; flex-wrap:wrap; margin-bottom:8px; } .rhead2 h3{ margin:0; font-size:17px; }
+.rsum{ display:flex; gap:12px; align-items:center; font-size:13px; color:var(--mu-muted); } .rsum b{ color:var(--mu-ink1); font-size:16px; }
+table.rt{ width:100%; border-collapse:collapse; font-size:13.5px; }
+.rt th{ text-align:start; font-size:11.5px; font-weight:700; color:var(--mu-muted); padding:8px 10px; border-bottom:1px solid var(--mu-border); white-space:nowrap; }
+.rt td{ padding:10px; border-bottom:1px solid var(--mu-border); vertical-align:middle; }
+.rt tr:last-child td{ border-bottom:0; } .rt tr.na td{ color:var(--mu-muted); }
+.rt td.nm{ font-weight:700; } .rt td.nm small{ display:block; font-weight:400; color:var(--mu-muted); font-size:11.5px; margin-top:2px; }
+.rt td.num{ font-variant-numeric:tabular-nums; font-weight:600; text-align:center; } .rt td.num.big{ font-size:18px; font-weight:800; color:var(--mu-ink1); }
+.rt td.calc{ font-size:12.5px; color:var(--mu-fg); } .rt td.calc bdi{ font-variant-numeric:tabular-nums; background:var(--mu-subtle); padding:2px 7px; border-radius:6px; }
+.rnd{ font-size:11px; color:var(--mu-ink3); font-weight:700; white-space:nowrap; }
+.ratio{ font-size:11.5px; font-weight:800; color:var(--mu-ink3); background:var(--mu-c1); padding:1px 6px; border-radius:6px; font-variant-numeric:tabular-nums; }
+.rt.ref td small{ color:var(--mu-muted); }
+.pipe-note{ background:var(--mu-subtle); border-radius:10px; padding:10px 12px; font-size:13px; display:grid; gap:6px; margin-top:10px; }
+.pipe-note a{ font-weight:600; } .mu-btn.sm{ padding:4px 10px; font-size:12.5px; margin-inline-start:8px; }
+.qual{ margin-top:14px; padding-top:12px; border-top:1px dashed var(--mu-border); }
+.qhead{ display:flex; align-items:center; gap:10px; margin-bottom:6px; font-size:13.5px; } .qhead b{ color:var(--mu-ink1); } .qhead .linkbtn{ margin-inline-start:auto; }
+.qrow{ display:grid; grid-template-columns:1fr 150px auto; gap:12px; align-items:center; padding:8px 10px; border-radius:10px; text-decoration:none; color:var(--mu-fg); font-size:13px; }
+.qrow:hover{ background:var(--mu-subtle); } .qrow small{ display:block; color:var(--mu-muted); font-size:11.5px; }
+.pill.wait{ background:var(--mu-subtle); color:var(--mu-muted); }
+.warnb{ background:var(--mu-wait-soft); } .warnb svg, .warnb b{ color:var(--mu-wait); }
+.cgroup{ margin-bottom:var(--gap); padding:16px 18px 6px; } .cgroup h3 small{ font-weight:600; }
+.citem{ display:grid; grid-template-columns:1fr auto; gap:14px; align-items:center; padding:11px 0; border-top:1px solid var(--mu-border); }
+.cgroup h3 + .citem{ border-top:0; }
+.ctext b{ display:flex; align-items:center; gap:6px; font-size:14px; flex-wrap:wrap; } .ctext span{ display:block; font-size:12.5px; color:var(--mu-muted); line-height:1.5; margin-top:2px; }
+.citem.is-n .ctext b{ color:var(--mu-no); } .citem.is-y .ctext b{ color:var(--mu-ok); }
+.tag{ font-size:10.5px; font-weight:700; padding:1px 7px; border-radius:99px; } .tag.must{ background:var(--mu-no-soft); color:var(--mu-no); } .tag.opt{ background:var(--mu-subtle); color:var(--mu-muted); }
+.tri{ display:flex; background:var(--mu-subtle); border-radius:10px; padding:3px; gap:2px; }
+.tri button{ font:inherit; font-size:12.5px; font-weight:700; border:0; background:none; padding:6px 12px; border-radius:8px; color:var(--mu-muted); cursor:pointer; }
+.tri button.on.y{ background:var(--mu-ok); color:#fff; } .tri button.on.p{ background:var(--mu-wait); color:#fff; } .tri button.on.n{ background:var(--mu-no); color:#fff; }
+.cnote{ margin-top:6px; font:inherit; font-size:12.5px; width:100%; box-sizing:border-box; border:1px solid var(--mu-border); border-radius:8px; padding:5px 9px; background:var(--mu-card); color:var(--mu-fg); }
+.row2{ display:flex; justify-content:space-between; font-size:13px; padding:8px 0; border-top:1px solid var(--mu-border); margin-top:8px; }
+.blist li small{ color:var(--mu-muted); }
+details.tpl{ margin-bottom:10px; padding:14px 18px; } details.tpl summary{ cursor:pointer; display:flex; flex-wrap:wrap; gap:6px 10px; align-items:center; font-size:15px; } details.tpl summary small{ flex-basis:100%; color:var(--mu-muted); font-size:12.5px; }
+.tg .qsec{ margin-top:14px; } .ti{ display:grid; grid-template-columns:180px 1fr; gap:10px; padding:6px 0; font-size:13px; border-top:1px solid var(--mu-border); } .ti b{ display:flex; gap:6px; align-items:center; flex-wrap:wrap; }
+.blank{ font:inherit; font-size:13px; border:1.5px dashed var(--mu-wait); border-radius:8px; padding:5px 9px; background:var(--mu-wait-soft); color:var(--mu-fg); width:100%; box-sizing:border-box; }
+.sech{ font-size:17px; color:var(--mu-ink1); margin:26px 0 12px; }
+.rules{ display:grid; grid-template-columns:repeat(4,1fr); gap:10px; } .rule{ background:var(--mu-subtle); border-radius:12px; padding:12px; display:grid; gap:4px; } .rule b{ color:var(--mu-ink1); font-size:14px; } .rule span{ font-size:12px; color:var(--mu-muted); }
+.contents{ display:flex; flex-wrap:wrap; gap:8px; }
+@media (max-width:1100px){ .stdwrap{ grid-template-columns:1fr; } .qcard{ position:static; } .rules{ grid-template-columns:1fr 1fr; } }
+@media (max-width:760px){ .stdks{ grid-template-columns:1fr; } .rt thead{ display:none; } .rt, .rt tbody, .rt tr, .rt td{ display:block; width:100%; box-sizing:border-box; }
+  .rt tr{ display:grid; grid-template-columns:1fr auto auto; gap:2px 10px; padding:10px 0; border-bottom:1px solid var(--mu-border); } .rt td{ border:0; padding:0; }
+  .rt td.nm{ grid-column:1/-1; } .rt td:nth-child(2), .rt td.calc{ grid-column:1/-1; font-size:12px; } .rt td.num{ text-align:start; }
+  .citem{ grid-template-columns:1fr; } .qrow{ grid-template-columns:1fr; } .ti{ grid-template-columns:1fr; } .rules{ grid-template-columns:1fr; } }
 </style>
 </head>
 <body>
@@ -531,7 +600,7 @@ table.pt{ width:100%; border-collapse:collapse; font-size:13.5px; }
   <div class="mu-appbar-actions"><span class="savestate" id="saveState">הכול שמור</span><button class="chip userchip" type="button" id="userChip" onclick="askUser(true)">מי מעדכן?</button><button class="mu-btn" type="button" onclick="fileMenu()">קובץ ונתונים</button><button class="mu-theme-toggle" type="button" data-mu-animated-theme-toggler aria-label="החלפת מצב בהיר/כהה"></button></div>
 </header>
 <main class="app">
-<nav class="tabs" id="tabs" aria-label="מסכים"><a role="button" href="#dash" data-value="dash">דשבורד</a><a role="button" href="#projects" data-value="projects">פרויקטים</a><a role="button" href="#budget" data-value="budget">תקציב</a><a role="button" href="#inventory" data-value="inventory">מלאי</a><a role="button" href="#deck" data-value="deck">מצגת</a><a role="button" href="#log" data-value="log">יומן</a></nav>
+<nav class="tabs" id="tabs" aria-label="מסכים"><a role="button" href="#dash" data-value="dash">דשבורד</a><a role="button" href="#projects" data-value="projects">פרויקטים</a><a role="button" href="#budget" data-value="budget">תקציב</a><a role="button" href="#std" data-value="std">תו תקן</a><a role="button" href="#inventory" data-value="inventory">מלאי</a><a role="button" href="#deck" data-value="deck">מצגת</a><a role="button" href="#log" data-value="log">יומן</a></nav>
 <div id="view"></div>
 </main>
 <div class="mu-sheet" id="sheet" data-mu-sheet aria-hidden="true">
@@ -958,6 +1027,191 @@ const SEED = {
   log: []
 };
 
+/* ===== תו תקן – הנתונים מהמסמך "תו תקן תשתיות אימונים ביבשה" (פברואר 2026) ===== */
+const TRAININGS = [['tironut','טירונות'],['advanced','הכשרה מתקדמת'],['command','הכשרת פיקוד'],['officer','השלמת קצונה']];
+const TRAIN_LBL = Object.fromEntries(TRAININGS);
+
+/* כיתות – 'תו תקן' כמות (עמ' 25). [כיתות, מסגרות]: המספר משמאל = כיתות, מימין = מסגרות. 0 = אין תקן */
+const CLASS_RATIO = {
+  team:    { tironut:0,     advanced:0,     command:[1,3], officer:[4,5] },
+  platoon: { tironut:[4,5], advanced:[1,2], command:[2,3], officer:[2,3] },
+  company: { tironut:[1,3], advanced:[1,3], command:[1,3], officer:[1,3] }
+};
+const DABAM_PER_UNIT = { tironut:3, advanced:1, command:1, officer:1 };   // הדב"ם מחלקתית – כיתות ליחידה
+const CLASS_CATS = [
+  { k:'team',    label:'כיתה צוותית',          fw:'teams',     fwLbl:'צוותים',  tpl:'cls20' },
+  { k:'platoon', label:'כיתה מחלקתית',         fw:'platoons',  fwLbl:'מחלקות',  tpl:'cls40' },
+  { k:'company', label:'כיתה פלוגתית',         fw:'companies', fwLbl:'פלוגות',  tpl:'cls120' },
+  { k:'dabam',   label:'כיתת הדב"ם מחלקתית',   tpl:'dab40' },
+  { k:'hall',    label:'אולם גדודי',           tpl:'clsGeneral' }
+];
+
+/* מטווחים – תו התקן למטווחים (עמ' 16) */
+const RANGE_RULES = {
+  perPlatoonTironut: { label:'מטווח לכל מחלקה בטירונות',             basis:'platoons',  mult:1, tironutOnly:true, who:'בא"ח חי"ר, בהל"צ ובהל"ג' },
+  twoPerCompanyTironut: { label:'2 מטווחים לכל פלוגה בטירונות',      basis:'companies', mult:2, tironutOnly:true, who:'ביסל"ת ושזפון' },
+  twoPerCompany:     { label:'2 מטווחים לכל פלוגה',                   basis:'companies', mult:2, who:'ביסל"ח' },
+  perCompany:        { label:'מטווח לכל פלוגה',                       basis:'companies', mult:1, who:'בה"ד 1' },
+  threePerCompanyTironut: { label:'3 מטווחים לכל פלוגה בטירונות',    basis:'companies', mult:3, tironutOnly:true, who:'פקע"ר' },
+  perTrainingCompany:{ label:'מטווח לפלוגה מתאמנת',                   basis:'companies', mult:1, who:'אימון' },
+  taam:              { label:'מטווחי 300 + 100 לגזרת האוגדה המרחבית', basis:'sectors',   mult:1, split:['300','100'], who:'תע"ם' },
+  none:              { label:'אין תקן מטווחים ליחידה', basis:null }
+};
+const RANGE_NOTE = 'בהל"ץ ובהל"ג הוחרגו לאור כמות הסד"כ בכל פלוגה וכמות המחלקות בפלוגה';
+
+/* לש"ב – סוגי מתקנים בטבלת אפיון הצרכים */
+const LSB_TYPES = {
+  low:       { label:'מבני עץ',            tpl:'lsbLow' },
+  machlakti: { label:'מתקן עץ מחלקתי',     tpl:'lsbTzakap' },
+  palugati:  { label:'מתקן עץ פלוגתי',     tpl:'lsbTzakap' },
+  beitYeri:  { label:'בית ירי',             tpl:'shootRoom' },
+  yarak:     { label:'\'ירק על הקווים\'',    tpl:null }
+};
+/* אפיון צרכים להכשרות לש"ב (עמ' 6–8). qty:null = "?" במסמך. per: unit / company / battalion */
+const LSB_PROFILES = [
+  { id:'hir-tir',   corps:'חי"ר',  unit:'בא"ח חי"ר – טירונות', ready:'עד חוליה', training:'tironut', range:'perPlatoonTironut', needs:[{t:'low',q:3}] },
+  { id:'hir-amat',  corps:'חי"ר',  unit:'בא"ח חי"ר – אמ"ת', ready:'עד פלוגה', training:'advanced', range:'none', needs:[{t:'beitYeri',q:1,note:'לרמת כיתה, מאפשר יותר מתרגיל 1'},{t:'palugati',q:1,note:'מאפשר 2 תרמ"חים במקביל, מאפשר אימון רק"ם ושת"פ'}] },
+  { id:'bislach',   corps:'חי"ר',  unit:'ביסל"ח – קמ"כ', ready:'כלי רק"ם בודד / עד כיתה / עד תרפ"ל', training:'command', range:'twoPerCompany', proj:'ביסל"ח', needs:[{t:'yarak',q:1,note:'הכשרת נהגים ומ"כים'},{t:'low',q:1,per:'company',note:'לרמת כיתה'},{t:'palugati',q:2,note:'מאפשר 2 תרמ"חים במקביל, מאפשר אימון רק"ם ושת"פ'}] },
+  { id:'bahaltz-y', corps:'חה"ן', unit:'בהל"ץ – הכש"י', ready:'עד חוליה', training:'tironut', range:'perPlatoonTironut', proj:'בהל"צ', needs:[{t:'low',q:3}] },
+  { id:'bahaltz-m', corps:'חה"ן', unit:'בהל"ץ – הכש"מ', ready:'כלי רק"ם בודד / עד מחלקה', training:'advanced', range:'none', proj:'בהל"צ', needs:[{t:'yarak',q:1,note:'הכשרת נהג'},{t:'machlakti',q:2,note:'מאפשר 2 תרכ"חים במקביל'}] },
+  { id:'bahaltz-k', corps:'חה"ן', unit:'בהל"ץ – מ"כים', ready:'כלי רק"ם בודד / עד מחלקה', training:'command', range:'none', proj:'בהל"צ', needs:[{t:'yarak',q:1,note:'הכשרת מפקד'},{t:'machlakti',q:2,note:'מאפשר 2 תרכ"חים במקביל'}] },
+  { id:'mahag',     corps:'מה"ג', unit:'הכשרת לוחמים ומפקדים חי"ג ואיסו"ק', ready:'עד חוליה', training:'tironut', range:'none', needs:[{t:'low',q:4}] },
+  { id:'pakar',     corps:'פקע"ר', unit:'הכשרת לוחמים ומפקדים', ready:'עד חוליה', training:'tironut', range:'threePerCompanyTironut', needs:[{t:'low',q:null}] },
+  { id:'shir-tir',  corps:'שריון', unit:'שריון – טירונות', ready:'עד חוליה', training:'tironut', range:'none', needs:[{t:'low',q:null}] },
+  { id:'shir-adv',  corps:'שריון', unit:'שריון – אימון מתקדם', ready:'כלי רק"ם בודד / צמד', training:'advanced', range:'none', needs:[{t:'yarak',q:1,note:'הכשרת נהג וצוות'}] },
+  { id:'shir-mtk',  corps:'שריון', unit:'שריון – קורס מט"קים', ready:'כלי רק"ם בודד', training:'command', range:'none', needs:[{t:'yarak',q:1,note:'הכשרת נהג וצוות'}] },
+  { id:'tatam-k',   corps:'חת"ם', unit:'הכשרת לוחמים ומפקדים – המערך הקני', ready:'כלי רק"ם בודד', training:'tironut', range:'none', needs:[{t:'yarak',q:1,note:'הכשרת נהג ומפקד'}] },
+  { id:'tatam-m',   corps:'חת"ם', unit:'הכשרת לוחמים ומפקדים – מורן, רוכ"ש, מטאור', ready:'עד חוליה', training:'tironut', range:'none', needs:[{t:'low',q:2}] },
+  { id:'bahad1',    corps:'בה"ד 1', unit:'גדודי קק"ץ דקל/הדס', ready:'ניהול תרגיל חוליה', training:'officer', range:'perCompany', proj:'בה"ד 1', needs:[{t:'low',q:3,per:'battalion'}] },
+  { id:'gefen',     corps:'חי"ר',  unit:'גפן – השלמה חילית', ready:'פיקוד על מחלקה כחלק מתרפ"ל/צק"פ', training:'officer', range:'none', needs:[{t:'palugati',q:null,note:'לא אובחן סופית'}] },
+  { id:'hatz',      corps:'חה"ן', unit:'ח"ץ – השלמה חילית', ready:'פיקוד על מח\' בלש"ב כחלק מתרפ"ל הנדסי', training:'officer', range:'none', needs:[{t:'palugati',q:1}] },
+  { id:'kaks',      corps:'חש"ן', unit:'קק"ש – השלמה חילית', ready:'פיקוד על מחלקה כחלק מתרפ"ל/צק"פ', training:'officer', range:'none', needs:[{t:'palugati',q:2,note:'כחלק מהסק"ם'}] },
+  { id:'tatam-o',   corps:'חת"ם', unit:'השלמת קש"אים', ready:'עד חוליה', training:'officer', range:'none', needs:[{t:'low',q:2}] },
+  { id:'mahag-o',   corps:'מה"ג', unit:'מה"ג – השלמה חילית', ready:'עד חוליה', training:'officer', range:'none', needs:[{t:'low',q:2}] },
+  // יחידות שמופיעות רק בתקן המטווחים
+  { id:'bahalag',   corps:'שריון', unit:'בהל"ג – טירונות', training:'tironut', range:'perPlatoonTironut', proj:'בהל"ג', needs:[] },
+  { id:'bislat',    corps:'תותחנים', unit:'ביסל"ת ושזפון – טירונות', training:'tironut', range:'twoPerCompanyTironut', needs:[] },
+  { id:'imun',      corps:'אימון', unit:'פלוגות מתאמנות', training:'advanced', range:'perTrainingCompany', needs:[] },
+  { id:'taam',      corps:'תע"ם', unit:'גזרות האוגדות המרחביות', training:'advanced', range:'taam', needs:[] }
+];
+
+/* ===== תקן איכותי – רשימות בדיקה. opt = אופציונלי (לא נספר), must = חובה ===== */
+const SIGN = { k:'sign', label:'שילוט מחייב', std:'שלטי הדרכה ובטיחות כמתחייב בהור"ב [טווחי ירי, קו יורים, קו המתנה וכו\']', must:true };
+const FILE = { k:'file', label:'תיק מטווח מאושר', std:'הימצאות תיק מתקן חתום ומאושר, בתוקף', must:true };
+const clsSpec = (n,o) => [
+  { name:'אמצעי הדרכה', items:[
+    {k:'board',label:'לוח מחיק',std:'90x120'},{k:'notice',label:'לוח מודעות',std:'לוח מודעות'},{k:'signs',label:'שילוט + תמונות',std:'שילוט ותמונות'},
+    {k:'models',label:'דגמים ייעודיים',std:'בכיתות נושאיות',opt:true} ]},
+  { name:'ריהוט', items:[
+    {k:'chairs',label:'כסאות חניכים',std:`${n} כסאות חניכים [עם מנח יד]`},{k:'tchair',label:'כיסא מדריך',std:'1 כיסא מדריך'},{k:'pcdesk',label:'שולחן מחשב',std:'1 שולחן מחשב'},
+    {k:'bin',label:'פח אשפה',std:o.bin||'1 פח אשפה'},{k:'lib',label:'ארון ספרות מקצועית',std:'ארון ספרות מקצועית'},{k:'lock',label:'ארון לנעילת מחשב',std:'1 ארון לנעילת מחשב'},{k:'podium',label:'דוכן מרצה',std:'1 דוכן מרצה'} ]},
+  { name:'תקשוב ומולטימדיה', items:[
+    {k:'pc',label:'מחשב ומסך',std:'1 מחשב ומסך [מקלדת ועכבר]'},{k:'screen',label:'מסך',std:o.screen},...(o.screen2?[{k:'screen2',label:'מסכים נוספים',std:o.screen2}]:[]),
+    {k:'net',label:'רשת אדומה/שחורה + שקעים',std:o.net||'רשת אדומה/שחורה + שקעים'},{k:'spk',label:'רמקולים',std:o.spk||'זוג רמקולים'} ]},
+  { name:'בינוי', items:[
+    {k:'build',label:'מבנה תקין',std:'מבנה תקין'},{k:'ac',label:'מיזוג',std:'מיזוג'},{k:'bars',label:'סורגים',std:'סורגים'},{k:'telco',label:'בינוי תומך תקשוב',std:'בינוי תומך תקשוב'},
+    {k:'door',label:'דלת מוסדית',std:'דלת מוסדית'},{k:'area',label:'שטח',std:o.area},{k:'curt',label:'וילונות',std:'וילונות'},{k:'sock',label:'שקעי חשמל',std:'שקעי חשמל'},
+    ...(o.stage?[{k:'stage',label:'במה מוגבהת',std:'במה מוגבהת למרצה [50 ס"מ]'}]:[]) ]}
+];
+const dabSpec = (n,o) => [
+  { name:'אמצעי הדרכה', items:[ {k:'board',label:'לוח מחיק',std:'90x120'},{k:'notice',label:'לוח מודעות',std:'לוח מודעות'},{k:'signs',label:'שילוט + תמונות',std:'שילוט ותמונות'} ]},
+  { name:'ריהוט', items:[
+    {k:'chairs',label:'כסאות חניכים',std:`${n} כסאות חניכים [ללא מנח יד]`},{k:'desks',label:'שולחנות מחשב',std:`${n} שולחנות מחשב מקובעים לרצפה [ללא מגירה, תעלות תקשורת]`},
+    {k:'tchair',label:'כיסא מדריך',std:'1 כיסא מדריך'},{k:'bin',label:'פח אשפה',std:'1 פח אשפה'},{k:'lib',label:'ארון ספרות מקצועית',std:'ארון ספרות מקצועית'},{k:'podium',label:'דוכן מרצה',std:'1 דוכן מרצה'} ]},
+  { name:'תקשוב ומולטימדיה', items:[
+    {k:'pcs',label:'מחשבים ומסכים',std:`${n+1} מחשבים ומסכים [מקלדת ועכבר]`},{k:'screen',label:'מסך',std:o.screen},{k:'spk',label:'רמקולים',std:o.spk||'זוג רמקולים'},{k:'army',label:'תקשורת army',std:'תקשורת army'} ]},
+  { name:'בינוי', items:[
+    {k:'build',label:'מבנה תקין',std:'מבנה תקין'},{k:'ac',label:'מיזוג',std:'מיזוג'},{k:'bars',label:'סורגים',std:'סורגים'},{k:'telco',label:'בינוי תומך תקשוב',std:'בינוי תומך תקשוב'},
+    {k:'door',label:'דלת מוסדית',std:'דלת מוסדית'},{k:'curt',label:'וילונות',std:'וילונות'},{k:'sock',label:'שקעי חשמל',std:'4 שקעי חשמל בשולחן לכל מחשב'},{k:'area',label:'שטח',std:o.area},
+    ...(o.stage?[{k:'stage',label:'במה מוגבהת',std:'במה מוגבהת'}]:[]) ]}
+];
+const RANGE_MAIN_OPEN = [
+  {k:'dist',label:'טווחי ירי',std:'טווחי הירי במטווח ינועו בין 25-300 מטרים, תלוי צורך והקשר'},
+  {k:'berm',label:'סוללות עפר וחומת מפגע',std:'בגובה תקני בהתאם להוראות הבטיחות, לא יפחתו מ-4 מ\' במטווחים מישוריים'},
+  {k:'edge',label:'גבול גזרה',std:'שילוט גבולות גזרה קשיחים – עדיפות לחביות או קוביות בטון בצבע אדום-לבן'},
+  {k:'shed',label:'סככת ירי',std:'תקינה ושלמה, נקיה, פתח כניסה אחד – מרווח 1.5 מ\' בין יורים. סימון קו יורים ושילוט'},
+  {k:'wait',label:'סככת המתנה',std:'סככה ל-2 מטווחים, תקינה, מקורה ונקיה [ל-40 חיילים] מרחק 10 מ\' לפחות מקו יורים',opt:true,optNote:'לא מחייב'},
+  SIGN, FILE,
+  {k:'loc',label:'מיקום וחשמל',std:'בעדיפות למיקום צמוד בסיס [המאפשר חיבור לרשת חשמל להארה קבועה] – תאורה קבועה תוקם בתנאי ומוצבת אבטחה מקומית; תאורה ניידת פר מטווח לטובת ירי לילה כדין יום'}
+];
+const RANGE_ENV = { name:'סביבת ההדרכה במטווח עצמו', items:[
+  {k:'board',label:'לוח מחיק',std:'200X120 במרכז המטווח'},{k:'arm',label:'שולחן התחמשות',std:'שולחן עץ על גלגלים שלצידו מתקן לפח'},
+  {k:'sand',label:'ארגז שקי חול',std:'דולב 1.5X1.5 – מכיל בתוכו 40 שקי פק"ל מלאים בחול'},
+  {k:'esign',label:'שילוט',std:'שילוט טווחי ירי, הוראות בטיחות, עמדת מאזין, פינת חלוקת תחמושת, פינת אגמ"ק וכו\''},
+  {k:'light',label:'תאורה',std:'בתוך המטווח ומחוץ למטווח עד ה-100 מטר'} ]};
+const RANGE_YARD = { name:'חצר אחורית – עזרי אימון', separate:true, note:'לא כלול בתקציב שיפוץ והקמת המטווח', items:[
+  {k:'plz',label:'מטרות פלציב',std:'30 מטרות ובסיסים בכל מחסן'},{k:'steel',label:'מטרות פלדה',std:'5 מטרות פלדה חצי גוף, 2 מטרות ET'},
+  {k:'cones',label:'קונוסים',std:'10 קונוסים, 2 מכל צבע'},{k:'shelf',label:'מידוף למטרות נייר',std:'4 מדפים'},
+  {k:'tbox',label:'ארגז מטרות',std:'ארגז ייעודי עם סיכות אקדחי סיכות'},{k:'cover',label:'מחסות',std:'12 מחסות – 6 משונן, 6 קיר'},{k:'nl',label:'ספק אור',std:'מארז 1 לגבולות גזרה בלילה'} ]};
+
+const TEMPLATES = {
+  // ---- לש"ב ומתקני אימון ----
+  lsbLow: { domain:'lsb', name:'מתקן לש"ב עץ רמות נמוכות', purpose:'אימון רמות נמוכות ב\'אש חיה\' (פרט עד כיתה) בלחימת פנים מבנה', groups:[{ name:'סטנדרט המתקן', items:[
+    {k:'tools',label:'כלי עבודה',std:'ערכת כלי עבודה'},
+    {k:'berm',label:'סוללות עפר וחומת מפגע',std:'8 מכולות או 5 מכולות (כולל פרזול) וסוללת עפר לבניית 3 חצרות ירי'},
+    {k:'units',label:'כמות מבנים',std:'3 ערכות עץ אוניברסליות'},
+    {k:'earth',label:'עבודות עפר',std:'עבודות עפר – ע"פ תמחור'}, SIGN, FILE,
+    {k:'loc',label:'מיקום',std:'בעדיפות למיקום צמוד בסיס [המאפשר אבטחת המתחם]'},
+    {k:'opt',label:'אופציונאלי',std:'הגדלת כמות החצרות; הסקו להגבהת מכולות (לאור ניהול סיכונים)',opt:true} ]}]},
+  lsbTzakap: { domain:'lsb', name:'מתקן לש"ב עץ לאימון צק"פ', purpose:'אימון מסגרתי לביצוע טכניקות ותרגולות בלחימת ש"ב ב\'אש חיה\' משטחי ההערכות ועד לשליטה מרצעית (רמת מחלקה עד פלוגה) בלחימת פנים מבנה וברחוב', groups:[{ name:'סטנדרט המתקן', items:[
+    {k:'tools',label:'כלי עבודה',std:'ערכת כלי עבודה'},
+    {k:'berm',label:'סוללות עפר וחומת מפגע',std:'20 מכולות (כולל פרזול) לבניית בין 10 ל-12 חצרות ירי'},
+    {k:'units',label:'כמות מבנים',std:'10 ערכות עץ אוניברסליות; 150/250 אלמנטי בטון (תלוי אם המתקן בעדיפות רק"ם); 5 מטרות גובה כפולות'},
+    {k:'earth',label:'עבודות עפר',std:'עבודות עפר – ע"פ תמחור'}, SIGN, FILE,
+    {k:'loc',label:'מיקום',std:'עדיפות לש"א המאפשר תנועה רגלית ורק"ם באימון; המתקן יאפשר לפחות כיוון תקיפה אחד באש לתרפ"ל, עם מספר פתרונות טקטיים; ושני תרגילי מחלקה במקביל ללא התניות'},
+    {k:'opt',label:'אופציונאלי',std:'חצר לירי פגז; הסקו להגבהת מכולות (לאור ניהול סיכונים)',opt:true} ]}]},
+  lsbBn: { domain:'lsb', name:'מתקן לש"ב עץ גדודי / פלוגתי מורחב', purpose:'אימון מסגרתי לביצוע טכניקות ותרגולות בלחימת ש"ב ב\'אש חיה\' משטחי ההערכות ועד לשליטה מרצעית (רמת פלוגה עד גדוד) בלחימת פנים מבנה וברחובות', blanks:true, groups:[{ name:'סטנדרט המתקן', items:[
+    {k:'tools',label:'כלי עבודה',std:'___ ערכות כלי עבודה'},
+    {k:'berm',label:'סוללות עפר וחומת מפגע',std:'___ מכולות (כולל פרזול) לבניית ___ חצרות ירי'},
+    {k:'units',label:'כמות מבנים',std:'___ ערכות עץ אוניברסליות; ___ אלמנטי בטון (תלוי אם המתקן בעדיפות רק"ם); ___ מטרות גובה כפולות'},
+    {k:'earth',label:'עבודות עפר',std:'עבודות עפר – ע"פ תמחור'}, SIGN, FILE,
+    {k:'loc',label:'מיקום',std:'עדיפות לש"א המאפשר תנועה רגלית ורק"ם באימון; המתקן יאפשר לפחות כיוון תקיפה אחד באש לתרפ"ל, עם מספר פתרונות טקטיים; ושני תרגילי מחלקה במקביל ללא התניות'},
+    {k:'opt',label:'אופציונאלי',std:'חצרות לירי פגזים; הסקו להגבהת מכולות (לאור ניהול סיכונים)',opt:true} ]}]},
+  shootRoom: { domain:'lsb', name:'חדרי ירי', purpose:'הכשרה ואימון הפרט ללחימה בש"ב \'באש חיה\' ביום ובלילה עד רמת כיתה (חד קומתי)', groups:[{ name:'סטנדרט המתקן', items:[
+    {k:'loc',label:'מיקום',std:'בתוך מחנה צבאי המאפשר הארה ואבטחה וחיבור לתשתית חשמל רציפה לתאורה פנימית ומצלמות; בתי הירי יוצבו על משטח קשיח ומפולס מאספלט או בטון'},
+    {k:'berm',label:'סוללות עפר וחומת מפגע',std:'בתי הירי יוצבו כאשר סביבם סוללות עפר ע"פ דרישות הבטיחות. המתחם יהיה מגודר באופן שלא יאפשר כניסה למתחם'},
+    {k:'units',label:'סוג וכמות מבנים',std:'מבטון מזוין/פלדה – תלוי מכרז וספק. כמות החדרים תוגדר בהתאם להישג הנדרש בהכשרה וע"פ רמת אימון. ככלל יוקמו 3-5 חדרים, 1-2 מסדרונות'},
+    {k:'splash',label:'מניעת נתזים',std:'חיפוי קלט"ז כלל המבנים לירי מטווח 0; ישורטטו גבולות ירי; יוצבו מטרות מקולטזות; נקי ממתכות ועצמים קשיחים, מעשבייה וצמחייה'},
+    {k:'sign',label:'שילוט מחייב',std:'שלטי הדרכה ובטיחות כמתחייב בהוראות הבטיחות [קו המתנה, איסוף תרמילים, הוראות בטיחות]',must:true}, FILE,
+    {k:'debrief',label:'תיעוד ותחקור',std:'מצלמות לטווח קצר לתיעוד ותחקור התרגול בכל המתקן; חדר תחקור ממוזג ומדוגם בצמוד למתחם (מיזוג, כסאות, לוח מחיק, טלוויזיה, סורגים, וילון, דלת מוסדית)'} ]}]},
+  lsbMech: { domain:'lsb', name:'מתקן לש"ב אימון יבש ע"ב מכולות', purpose:'הכשרה ואימון \'רמות נמוכות\' עד מסגרת פלוגתית בטכניקות ותרגולות ללחימה בש"ב ביום ובלילה עד רמת פלוגה ב\'יבש\'', groups:[{ name:'סטנדרט המתקן', items:[
+    {k:'loc',label:'מיקום',std:'בתוך מחנה צבאי המאפשר הארה ואבטחה וחיבור לתשתית חשמל רציפה לתאורת הצפה; המכולות יוצבו באופן מפולס בשטח'},
+    {k:'char',label:'מאפייני מתקן',std:'מכולות מדוגמות בהזמנה ייעודית, דימוי בנייה כפרית נמוכה [עם מימד גובה – עד 2 קומות] הכוללת חצרות; פתחי תת"ק סמוכים ממתכת עם פיר בעומק 1 מ\' לתרגול \'זיכוי\' פתח'},
+    {k:'qty',label:'כמות מכולות',std:'בהתאם להישג הנדרש ולרמת האימון; ככלל 35 מכולות לאימון מחלקתי ו-60 מכולות לאימון פלוגתי, במתווה כפרי הכולל ארגון ברחובות'},
+    {k:'plan',label:'מתאר בנייה',std:'גרמי מדרגות פנימי/חיצוני למבנה דו קומתי, פתחי דלתות וחלונות, ארגון ברחובות, מרחק בין המכולות שיאפשר תנועת רק"ם; חצרות (ע"ב אלמנטי בטון/עץ)'},
+    {k:'sign',label:'שילוט מחייב',std:'שלטי הדרכה ובטיחות כמתחייב בהוראות הבטיחות',must:true}, FILE,
+    {k:'decor',label:'תפאורה',std:'שילוטים וכרזות מודפסות בהתאם לזירת התרגול; חבלי כביסה, ריהוט בסיסי – באחריות היחידה',opt:true} ]}]},
+  // ---- מטווחים ----
+  rangeOpen: { domain:'rng', name:'מטווח קבוע פתוח', purpose:'הכשרה ואימון הפרט בקליעה בנשק אישי ומחלקתי', groups:[{name:'סטנדרט המתקן',items:RANGE_MAIN_OPEN}, RANGE_ENV, RANGE_YARD]},
+  rangeClosed: { domain:'rng', name:'מטווח קבוע סגור (התבססות על תוואי שטח)', purpose:'הכשרה ואימון הפרט בקליעה בנשק אישי ומחלקתי', groups:[{name:'סטנדרט המתקן',items:[
+    {k:'dist',label:'טווחי ירי',std:'לטווח מקסימלי של 50 מטרים (החרגה, באישור מבק"א)'},
+    {k:'berm',label:'סוללות עפר וחומת מפגע',std:'במטווח ל-25 מ\': סוללות הפרדה לפחות 5 מ\' וחומת מפגע לפחות 8 מ\'. במטווח ל-50 מ\': סוללות הפרדה לפחות 5 מ\' וחומת מפגע לפחות 14 מ\''},
+    ...RANGE_MAIN_OPEN.filter(i=>['edge','shed','wait','sign','file'].includes(i.k)).map(i=>i.k==='wait'?Object.assign({},i,{opt:false,optNote:''}):i),
+    {k:'loc',label:'מיקום',std:'בעדיפות למיקום צמוד בסיס [המאפשר חיבור לרשת חשמל להארה קבועה] – תאורה קבועה תוקם בתנאי ומוצבת אבטחה מקומית'} ]}, RANGE_ENV, RANGE_YARD]},
+  // ---- כיתות ----
+  cls20:  { domain:'cls', name:'כיתת הדרכה / נושאית צוותית [עד 20]', groups:clsSpec(20,{screen:'מסך 75"',area:'26 מ"ר (1.3 מ\' לאדם)'})},
+  cls40:  { domain:'cls', name:'כיתת הדרכה / נושאית מחלקתית [עד 40]', groups:clsSpec(40,{screen:'מסך 95"',area:'52 מ"ר (1.3 מ\' לאדם)'})},
+  cls60:  { domain:'cls', name:'כיתת הדרכה / נושאית פלוגתית מוקטנת [עד 60]', groups:clsSpec(60,{bin:'1 פח אשפה גדול',screen:'2 מסכים 95"',net:'רשת אדומה/שחורה + 10 שקעים',spk:'2 רמקולים',area:'60 מ"ר (1 מ\' לאדם)',stage:true})},
+  cls120: { domain:'cls', name:'כיתת הדרכה פלוגתית [עד 120]', groups:clsSpec(120,{bin:'1 פח אשפה גדול',screen:'2 מסכים 50" + זרועות תליה',screen2:'2 מסכי 100"',net:'רשת אדומה/שחורה + 14 שקעים',spk:'4 רמקולים',area:'120 מ"ר (1 מ\' לאדם)',stage:true})},
+  cls160: { domain:'cls', name:'כיתת הדרכה פלוגתית גדולה [עד 160]', groups:clsSpec(160,{bin:'1 פח אשפה גדול',screen:'2 מסכים 50" + זרועות תליה',screen2:'2 מסכי 100"',net:'רשת אדומה/שחורה + שקעים',spk:'4 רמקולים',area:'בהתאם לאפיון ייחודי, מינימום 160 מ"ר',stage:true})},
+  dab20:  { domain:'cls', name:'כיתת הדב"ם / צי"ד צוותית [עד 20]', groups:dabSpec(20,{screen:'1 מסך 75"',area:'42 מ"ר (2.1 מ\' לאדם)'})},
+  dab40:  { domain:'cls', name:'כיתת הדב"ם / צי"ד מחלקתית [עד 40]', groups:dabSpec(40,{screen:'מסך 95"',area:'68 מ"ר (1.7 מ\' לאדם)'})},
+  dab60:  { domain:'cls', name:'כיתת הדב"ם / צי"ד פלוגתית מוקטנת [עד 60]', groups:dabSpec(60,{screen:'2 טלוויזיות 95"',spk:'4 רמקולים',area:'102 מ"ר (1.7 מ\' לאדם)',stage:true})},
+  clsGeneral: { domain:'cls', name:'מפרט כללי – אמצעים ותשתיות בכיתת הדרכה (אולם)', groups:[
+    { name:'אמצעי הדרכה', items:[{k:'board',label:'לוח מחיק/נייד',std:'90x120'},{k:'notice',label:'לוח מודעות',std:'1 לוח מודעות גדול'},{k:'signs',label:'שילוט + תמונות',std:'שילוט ותמונות'},{k:'models',label:'דגמים ייעודיים',std:'דגמים ייעודיים',opt:true}]},
+    { name:'ריהוט', items:[{k:'chairs',label:'כסאות חניכים',std:'כסאות חניכים [עם/ללא מנח יד] או כיסאות מתקפלים [מקובעים לרצפה]'},{k:'podium',label:'דוכן מרצה',std:'1 דוכן מרצה'},{k:'tchair',label:'כיסא מדריך',std:'1 כיסא מדריך'},{k:'pcdesk',label:'שולחן מחשב',std:'1 שולחן מחשב'},{k:'lock',label:'ארון לנעילת מחשב',std:'1 ארון לנעילת מחשב'},{k:'lib',label:'ארון ספרות מקצועית',std:'ארון ספרות מקצועית'},{k:'bin',label:'פח אשפה',std:'פח אשפה'}]},
+    { name:'תקשוב ומולטימדיה', items:[{k:'pc',label:'מחשב ומסך',std:'מחשב ומסך [מקלדת ועכבר]'},{k:'pa',label:'מערכת הגברה',std:'מערכת הגברה + רמקולים'},{k:'tv',label:'מסכי טלוויזיה',std:'מסכי טלוויזיה'},{k:'net',label:'רשת',std:'רשת אדומה/שחורה + שקעים'}]},
+    { name:'בינוי', items:[{k:'build',label:'מבנה תקין',std:'מבנה תקין'},{k:'ac',label:'מיזוג',std:'מיזוג'},{k:'bars',label:'סורגים',std:'סורגים'},{k:'telco',label:'בינוי תומך תקשוב',std:'בינוי תומך תקשוב'},{k:'door',label:'דלת מילוט',std:'דלת מילוט מוסדית / דלת מוסדית'},{k:'curt',label:'וילונות',std:'וילונות'},{k:'stage',label:'במה מוגבהת',std:'במה מוגבהת'},{k:'tier',label:'מבנה מדורג',std:'מבנה מדורג'},{k:'control',label:'חדר במאי ושליטה',std:'חדר במאי ושליטה'},{k:'light',label:'מערכת תאורה מתקדמת',std:'מערכת תאורה מתקדמת'},{k:'fire',label:'מערכת כיבוי אש',std:'מערכת כיבוי אש'},{k:'wc',label:'תאי שירותים',std:'תאי שירותים'},{k:'lobby',label:'מבואה',std:'מבואה'},{k:'access',label:'נגישות לנכים',std:'נגישות לנכים'},{k:'park',label:'חנייה',std:'חנייה'},{k:'sock',label:'שקעי חשמל',std:'שקעי חשמל'},{k:'area',label:'שטח',std:'מטר מרובע לפי מגמות היחידה – עד 120/300/500'}]} ]}
+};
+const LSB_CONTENTS = ['ערכות עץ','צמ"ה','כלי עבודה ופרזול','מטרות גובה [פלאחים]','מכולות מבנה','מכולות חציצה','אלמנטים','שילוט ותיק מתקן','הסקו','הובלות','קלט"זים','ריתוך מכולות'];
+const DOMAINS = { cls:'כיתות', rng:'מטווחים', lsb:'לש"ב ומתקני אימון' };
+
+function seedStd(){
+  return { units: LSB_PROFILES.map(p=>({ id:'s-'+p.id, profile:p.id, name:p.unit, corps:p.corps, training:p.training, range:p.range, projUnit:p.proj||'', n:{}, have:{} })), checks:[], tplText:{} };
+}
+
+SEED.std = seedStd();
+
 /* ===== מנוע: שלבים → אחוז התקדמות, חסמים, ממצאים והצעות להזזת כסף ===== */
 const STAGES = [
   { n:1,  name:'דמ"צ היחידה – אפיון הצורך', w:3,  phase:0 },
@@ -1123,6 +1377,7 @@ function findings(db){
   if(permit) out.unshift({ sev:'crit', title:`צוואר בקבוק: ${permit} פרויקטים ממתינים להיתר בנייה`, body:'זה החסם הנפוץ ביותר בתיק. ריכוז מול בינוי ישחרר הכי הרבה פרויקטים.' });
   const noUpd=db.projects.filter(p=>p.st.source==='none').length;
   if(noUpd) out.push({ sev:'info', title:`${noUpd} מתקנים מהאקסל עוד בלי סטטוס`, body:'במאגר יש מתקנים בלי שלבים מעודכנים. כדאי לעבור עליהם במסך הפרויקטים.' });
+  const sf=(typeof stdFinding==='function')&&DB.std?stdFinding():null; if(sf) out.push(sf);
   const order={crit:0,warn:1,info:2,ok:3}; return out.sort((a,b)=>order[a.sev]-order[b.sev]);
 }
 function parseDate(s){ const m=String(s||'').match(/^(\d{1,2})[./](\d{1,2})[./](\d{2,4})$/); if(!m) return null; let y=+m[3]; if(y<100) y+=2000; return new Date(y,+m[2]-1,+m[1]).getTime(); }
@@ -1168,7 +1423,7 @@ function loadDB(){
   try{ local=JSON.parse(lsGet(LS_KEY)); }catch(e){}
   let db = [embedded,local].filter(x=>x&&x.projects).sort((a,b)=>(b.savedAt||0)-(a.savedAt||0))[0];
   if(!db) db=JSON.parse(JSON.stringify(SEED));
-  db.log=db.log||[]; db.rejected=db.rejected||[];
+  db.log=db.log||[]; db.rejected=db.rejected||[]; db.std=db.std||seedStd(); db.std.checks=db.std.checks||[]; db.std.tplText=db.std.tplText||{};
   return db;
 }
 const DB = loadDB();
@@ -1318,7 +1573,7 @@ function viewDash(){
   </section>
   <section class="card"><h3>תשתיות הדרכה במספרים <small>הקיים היום ביבשה · מתעדכן אוטומטית עם כל מסירה</small></h3><div class="inv">${inv}</div></section>`;
 }
-const findHtml = f => `<div class="find"><span class="sev ${f.sev}">${IC[f.sev]}</span><div><b>${f.ref&&DB.projects.find(p=>p.id===f.ref)?`<a href="#id/${f.ref}">${esc(f.title)}</a>`:f.ref?`<a href="#budget/${(DB.budget.find(b=>b.id===f.ref)||{}).track||''}">${esc(f.title)}</a>`:esc(f.title)}</b><p>${esc(f.body)}</p></div></div>`;
+const findHtml = f => `<div class="find"><span class="sev ${f.sev}">${IC[f.sev]}</span><div><b>${f.href?`<a href="${f.href}">${esc(f.title)}</a>`:f.ref&&DB.projects.find(p=>p.id===f.ref)?`<a href="#id/${f.ref}">${esc(f.title)}</a>`:f.ref?`<a href="#budget/${(DB.budget.find(b=>b.id===f.ref)||{}).track||''}">${esc(f.title)}</a>`:esc(f.title)}</b><p>${esc(f.body)}</p></div></div>`;
 
 /* ===== פרויקטים – מסודר כמו באקסל: מחוז → יחידה → פרויקט ===== */
 let PF = { q:'', region:'', track:'', state:'', phase:'', blk:'' };
@@ -1384,7 +1639,7 @@ function bindProjects(){
 
 /* ---------- טופס פרויקט (חדש / עריכה) ---------- */
 function projectForm(p, preset={}){
-  const isNew=!p; p=p||{ region:preset.region||DB.regions[0], unit:preset.unit||'', track:'aviv', group:'' , frame:{} };
+  const isNew=!p; p=p||Object.assign({ track:'aviv', group:'', frame:{} }, preset, { region:preset.region||DB.regions[0], unit:preset.unit||'' });
   const units=[...new Set(DB.projects.map(x=>x.unit))];
   const invOpts=[['','לא נכנס למלאי (שיפוץ / אחזקה)'],...DB.inventory.map(i=>[i.key,i.label])];
   openSheet(isNew?'פרויקט חדש':'עריכת פרטי פרויקט',`
@@ -1708,6 +1963,324 @@ function trackForm(tid){
   ()=>{ t.required=num(fv('req'))||0; t.allocated=num(fv('al'))||0; t.fileAmount=num(fv('fa')); logIt('עדכון עולם תקציב',`${t.name}: ${fmtM(t.allocated)}/${fmtM(t.required)}`); render(); });
 }
 
+/* ===== תו תקן – מנוע החישוב והמסכים ===== */
+const stdProfile = u => LSB_PROFILES.find(p=>p.id===u.profile) || { needs:[] };
+const ceilR = (x) => Math.ceil(x - 1e-9);
+const r2 = x => +(+x).toFixed(2);
+const nv = v => (v===''||v==null||isNaN(v)) ? null : +v;
+
+/* אילו שדות "מסגרות" נדרשים ליחידה */
+function stdFields(u){
+  const f=new Set(['platoons','companies']);
+  if(CLASS_RATIO.team[u.training]) f.add('teams');
+  if(stdProfile(u).needs.some(x=>x.per==='battalion')) f.add('battalions');
+  if(u.range==='taam') f.add('sectors');
+  return f;
+}
+const FW_LBL = { teams:'צוותים', platoons:'מחלקות', companies:'פלוגות', battalions:'גדודים', sectors:'גזרות אוגדה מרחביות' };
+
+/* ===== החישוב הכמותי ===== */
+function stdCalc(u){
+  const n=u.n||{}, h=u.have||{}, need=stdFields(u), missing=[];
+  const row=(o)=>{ o.have=nv(h[o.hk]); o.gap=(o.req==null||o.have==null)?null:o.have-o.req; return o; };
+  const fwVal=k=>{ const v=nv(n[k]); if(v==null && need.has(k) && !missing.includes(k)) missing.push(k); return v; };
+  // כיתות
+  const cls=CLASS_CATS.map(c=>{
+    if(c.k==='dabam'){ const q=DABAM_PER_UNIT[u.training]; return row({ k:c.k, label:c.label, hk:'cls_dabam', rule:`${q} ליחידה`, calc:'', req:q }); }
+    if(c.k==='hall') return row({ k:c.k, label:c.label, hk:'cls_hall', rule:'1 ליחידה', note:'ע"פ מאפייני יחידה ומגמות – עד 120/300/500', calc:'', req:1 });
+    const ratio=CLASS_RATIO[c.k][u.training];
+    if(!ratio) return row({ k:c.k, label:c.label, hk:'cls_'+c.k, rule:'אין תקן (0)', calc:'', req:0, na:true });
+    const [cl,fw]=ratio, v=fwVal(c.fw);
+    const rule=`${cl===1?'כיתה':cl+' כיתות'} לכל ${fw} ${c.fwLbl}`;
+    if(v==null) return row({ k:c.k, label:c.label, hk:'cls_'+c.k, rule, ratio:`${cl}:${fw}`, calc:'', req:null, needInput:c.fw });
+    const x=v*cl/fw, req=ceilR(x);
+    return row({ k:c.k, label:c.label, hk:'cls_'+c.k, rule, ratio:`${cl}:${fw}`, calc:{ expr:`${v} × ${cl} ÷ ${fw} = ${r2(x)}`, req, rounded:Math.abs(x-req)>1e-9 }, req });
+  });
+  // מטווחים
+  const R=RANGE_RULES[u.range]||RANGE_RULES.none; let rng=[]; const rngNotes=[];
+  if(R.basis){
+    if(R.tironutOnly && u.training!=='tironut'){ rng=[row({ k:'rng', label:'מטווחים', hk:'rng', rule:R.label, calc:'', req:0, na:true })]; rngNotes.push('התקן חל על טירונות בלבד – ליחידה הזו לא נדרשים מטווחים לפי התקן.'); }
+    else {
+      const v=fwVal(R.basis);
+      const mk=(k,label,hk)=>{ if(v==null) return row({ k, label, hk, rule:R.label, calc:'', req:null, needInput:R.basis });
+        const x=v*R.mult, req=ceilR(x); return row({ k, label, hk, rule:R.label, calc:{ expr:`${v} × ${R.mult} = ${r2(x)}`, req, rounded:false }, req }); };
+      rng = R.split ? R.split.map(m=>mk('rng'+m,`מטווח ${m} מ'`,'rng'+m)) : [mk('rng','מטווחים','rng')];
+    }
+    if(/בהל"[צץ]|בהל"ג/.test(u.name)) rngNotes.push(RANGE_NOTE+'.');
+  } else rngNotes.push('אין ליחידה הזו תקן מטווחים במסמך.');
+  // לש"ב
+  const lsb=stdProfile(u).needs.map(nd=>{
+    const T=LSB_TYPES[nd.t]; let rule, req, calc='';
+    if(nd.q==null){ rule='לא נקבע במסמך (?)'; req=null; }
+    else if(nd.per==='company'){ const v=fwVal('companies'); rule=`${nd.q} לכל פלוגה`; if(v!=null){ req=ceilR(v*nd.q); calc={expr:`${v} × ${nd.q} = ${r2(v*nd.q)}`,req,rounded:false}; } else req=null; }
+    else if(nd.per==='battalion'){ const v=fwVal('battalions'); rule=`${nd.q} לכל גדוד`; if(v!=null){ req=ceilR(v*nd.q); calc={expr:`${v} × ${nd.q} = ${r2(v*nd.q)}`,req,rounded:false}; } else req=null; }
+    else { rule=`${nd.q} ליחידה`; req=nd.q; }
+    return row({ k:'lsb_'+nd.t, t:nd.t, label:T.label, hk:'lsb_'+nd.t, rule, calc, req, unknownStd:nd.q==null, note:nd.note, needInput:(req==null&&nd.q!=null)?(nd.per==='company'?'companies':'battalions'):null });
+  });
+  const tot=rows=>{ const k=rows.filter(r=>!r.na); return { req:k.reduce((a,r)=>a+(r.req||0),0), have:k.reduce((a,r)=>a+(r.have||0),0),
+    miss:k.reduce((a,r)=>a+(r.gap!=null&&r.gap<0?-r.gap:0),0), surplus:k.reduce((a,r)=>a+(r.gap>0?r.gap:0),0),
+    open:k.filter(r=>r.req==null&&!r.unknownStd).length+k.filter(r=>r.have==null&&r.req!=null&&r.req>0).length, unknown:k.filter(r=>r.unknownStd).length, n:k.length }; };
+  // החלפה: כיתה גדולה יכולה לשמש מסגרת קטנה יותר
+  const order=['team','platoon','company','hall']; let subs=[];
+  order.forEach((k,i)=>{ const r=cls.find(x=>x.k===k); if(!r||r.gap==null||r.gap>=0) return;
+    let need=-r.gap; order.slice(i+1).forEach(bk=>{ const b=cls.find(x=>x.k===bk); if(need>0&&b&&b.gap>0){ const use=Math.min(need,b.gap); subs.push(`עודף ${use} ${b.label.replace('כיתה ','כיתות ').replace('אולם','אולמות')} יכול לכסות חלק מהחוסר ב${r.label.replace('כיתה ','כיתות ')}.`); need-=use; } }); });
+  return { cls, rng, lsb, rngNotes, subs, missing, tot:{ cls:tot(cls), rng:tot(rng), lsb:tot(lsb) } };
+}
+const stdFilled = u => Object.values(u.n||{}).some(v=>nv(v)!=null) || Object.values(u.have||{}).some(v=>nv(v)!=null);
+
+/* פרויקטים פתוחים במערכת שיסגרו חלק מהפער */
+const DOMAIN_INV = { rng:['ranges'], lsb:['lashabEtz','lashabMech','shootHouse','yarak'], cls:['classes'] };
+function stdPipeline(u,dom){
+  if(!u.projUnit) return [];
+  return DB.projects.filter(p=>(p.unit===u.projUnit||p.alias===u.projUnit) && DOMAIN_INV[dom].includes(p.invType) && !delivered(p));
+}
+
+/* ===== תקן איכותי ===== */
+const tplStd = (tid,it) => (DB.std.tplText||{})[tid+'.'+it.k] || it.std;
+function checkScore(c){
+  const T=TEMPLATES[c.tpl]; if(!T) return { pct:0, done:false };
+  const v=c.v||{}, main=[], yard=[];
+  T.groups.forEach(g=>g.items.forEach(it=>{ if(it.opt) return; (g.separate?yard:main).push(it); }));
+  const val=k=>({y:1,p:.5,n:0}[v[k]]);
+  const sc=arr=>{ const tot=arr.length; const s=arr.reduce((a,it)=>a+(val(it.k)||0),0); return tot?Math.round(s/tot*100):100; };
+  const cnt={ y:0, p:0, n:0, open:0 }; main.forEach(it=>{ const x=v[it.k]; if(x) cnt[x]++; else cnt.open++; });
+  const mustFail=main.filter(it=>it.must && v[it.k] && v[it.k]!=='y');
+  const pct=sc(main), done=cnt.open===0;
+  let status, tone;
+  if(!done && !cnt.y && !cnt.p && !cnt.n){ status='טרם נבדק'; tone='wait'; }
+  else if(mustFail.length){ status='לא עומד – חסר פריט חובה'; tone='none'; }
+  else if(pct===100 && done){ status='עומד בתקן'; tone='done'; }
+  else if(pct>=80){ status=done?'עומד חלקית':'עומד חלקית (בבדיקה)'; tone='partial'; }
+  else { status=done?'לא עומד בתקן':'לא עומד (בבדיקה)'; tone='none'; }
+  const miss=[]; T.groups.forEach(g=>g.items.forEach(it=>{ if(it.opt) return; const x=v[it.k]; if(x==='n'||x==='p') miss.push({ g:g.name, it, x, note:(c.notes||{})[it.k]||'', separate:!!g.separate }); }));
+  return { pct, done, cnt, status, tone, miss, mustFail, yard:yard.length?sc(yard):null };
+}
+const unitChecks = (uid,dom) => DB.std.checks.filter(c=>c.unit===uid && (!dom || (TEMPLATES[c.tpl]||{}).domain===dom));
+const avgQual = checks => { const s=checks.map(checkScore).filter(x=>x.cnt&&(x.cnt.y+x.cnt.p+x.cnt.n)); return s.length?Math.round(s.reduce((a,x)=>a+x.pct,0)/s.length):null; };
+
+/* ===== תצוגה ===== */
+const gchip = r => {
+  if(r.na) return '<span class="gchip na">לא נדרש</span>';
+  if(r.unknownStd) return '<span class="gchip wait">תקן לא נקבע</span>';
+  if(r.req==null) return '<span class="gchip wait">חסר נתון</span>';
+  if(r.have==null) return '<span class="gchip wait">להזין קיים</span>';
+  if(r.gap<0) return `<span class="gchip no">חסר ${-r.gap}</span>`;
+  if(r.gap>0) return `<span class="gchip info">עודף ${r.gap}</span>`;
+  return '<span class="gchip ok">תקין</span>';
+};
+const calcHtml = r => r.calc ? `<bdi dir="ltr">${esc(r.calc.expr)}</bdi>${r.calc.rounded?` <span class="rnd">← מעגלים למעלה</span>`:''}` : (r.needInput?`<span class="muted">חסר: מספר ${FW_LBL[r.needInput]}</span>`:'');
+const totChip = t => t.miss>0 ? `<span class="gchip no">חסר ${t.miss}</span>` : (t.open||t.unknown) ? `<span class="gchip wait">${t.open?'חסרים נתונים':'תקן חלקי'}</span>` : t.n ? '<span class="gchip ok">עומד בתקן</span>' : '<span class="gchip na">—</span>';
+
+function viewStd(sub,id){
+  if(sub==='u') return viewStdUnit(id);
+  if(sub==='q') return viewStdCheck(id);
+  if(sub==='ref') return viewStdRef(id||'cls');
+  const units=DB.std.units, calcs=units.map(u=>({u,c:stdCalc(u),f:stdFilled(u)}));
+  const filled=calcs.filter(x=>x.f);
+  const dom=d=>{ const t=filled.reduce((a,x)=>{ const z=x.c.tot[d]; a.req+=z.req; a.have+=z.have; a.miss+=z.miss; return a; },{req:0,have:0,miss:0});
+    const q=avgQual(DB.std.checks.filter(c=>(TEMPLATES[c.tpl]||{}).domain===d)), qn=DB.std.checks.filter(c=>(TEMPLATES[c.tpl]||{}).domain===d).length;
+    const pipe=filled.reduce((a,x)=>a+stdPipeline(x.u,d).reduce((s,p)=>s+(p.invQty||1),0),0);
+    return `<a class="card stdk" href="#std/ref/${d}"><div class="lbl">${DOMAINS[d]}</div>
+      <div class="big"><b class="${t.miss?'neg':''}">${t.miss}</b><span>${t.miss?'חסרים לפי התקן':'אין חוסר'}</span></div>
+      <div class="sub">נדרש ${t.req} · קיים ${t.have}${pipe?` · בתהליך +${pipe}`:''}</div>
+      <div class="qline"><span>איכותי</span>${q==null?'<span class="muted">טרם נבדק</span>':`<div class="bar"><i style="width:${q}%"></i></div><b>${q}%</b>`}<small>${qn} בדיקות</small></div></a>`; };
+  const corps=[...new Set(units.map(u=>u.corps))];
+  const cell=(x,d)=>{ if(!x.f) return '<td class="muted sm">למילוי</td>'; const t=x.c.tot[d]; if(!t.n) return '<td class="muted sm">—</td>';
+    return `<td><span class="hr">${t.have}/${t.req}</span>${totChip(t)}</td>`; };
+  return `
+  <div class="head"><div><h1 class="h1">תו תקן</h1><p class="lead">ממלאים שאלון לכל יחידה – המערכת מחשבת כמה נדרש לפי התקן, מה קיים ומה חסר. כמותי ואיכותי, תמיד מעוגל למעלה.</p></div>
+    <div class="btnrow"><a class="mu-btn" href="#std/ref/cls">התקנים במסמך</a><button class="mu-btn mu-btn--primary" type="button" onclick="stdUnitForm()">${IC.plus}יחידה חדשה</button></div></div>
+  <section class="stdks">${['cls','rng','lsb'].map(dom).join('')}</section>
+  <section class="card"><div class="thead-row" style="padding:0 0 10px"><h3>היחידות <small>מולאו ${filled.length} מתוך ${units.length} · לחיצה על שורה פותחת את השאלון והתוצאות</small></h3></div>
+    <div class="fillbar"><div class="bar"><i style="width:${units.length?filled.length/units.length*100:0}%"></i></div></div>
+    <table class="pt stdt"><thead><tr><th>יחידה</th><th>הכשרה</th><th>כיתות<br><small>קיים/נדרש</small></th><th>מטווחים</th><th>לש"ב</th><th>איכותי</th></tr></thead>
+    ${corps.map(cp=>`<tbody><tr class="uhead"><td colspan="6"><b>${esc(cp)}</b></td></tr>${calcs.filter(x=>x.u.corps===cp).map(x=>{ const q=avgQual(unitChecks(x.u.id));
+      return `<tr class="prow" onclick="go('std/u/${x.u.id}')"><td class="nm">${esc(x.u.name)}${x.c.missing.length&&x.f?'<small>חסרים נתוני מסגרות</small>':''}</td><td><span class="tchip">${TRAIN_LBL[x.u.training]}</span></td>${cell(x,'cls')}${cell(x,'rng')}${cell(x,'lsb')}<td>${q==null?'<span class="muted sm">—</span>':`<div class="pbar"><div class="bar"><i style="width:${q}%"></i></div><b>${q}%</b></div>`}</td></tr>`}).join('')}</tbody>`).join('')}
+    </table></section>`;
+}
+
+function viewStdUnit(id){
+  const u=DB.std.units.find(x=>x.id===id); if(!u) return '<div class="card placeholder">היחידה לא נמצאה</div>';
+  const P=stdProfile(u), f=stdFields(u), n=u.n||{}, h=u.have||{}, c=stdCalc(u);
+  const inp=(grp,k,label,sub)=>`<label class="nfld"><span>${label}${sub?`<small>${sub}</small>`:''}</span><input type="number" min="0" step="1" inputmode="numeric" data-g="${grp}" data-k="${k}" value="${nv((grp==='n'?n:h)[k])??''}" placeholder="—"></label>`;
+  const R=RANGE_RULES[u.range]||RANGE_RULES.none;
+  return `
+  <div class="crumbs"><a href="#std">תו תקן</a> / ${esc(u.corps)}</div>
+  <div class="head"><div><h1 class="h1">${esc(u.name)}</h1>
+    <div class="chips"><span class="chip">${esc(u.corps)}</span><span class="chip">${TRAIN_LBL[u.training]}</span>${P.ready?`<span class="chip">כשירות: ${esc(P.ready)}</span>`:''}${u.projUnit?`<span class="chip">מקושר ליחידה ${esc(u.projUnit)} בפרויקטים</span>`:''}</div></div>
+    <div class="btnrow"><button class="mu-btn" type="button" onclick="stdUnitForm('${u.id}')">${IC.edit}פרטי יחידה</button><button class="mu-btn" type="button" onclick="stdPrint('${u.id}')">הדפסת תוצאות</button></div></div>
+  <div class="stdwrap">
+    <section class="card qcard"><h3>שאלון – נתוני היחידה <small>התוצאות מתעדכנות תוך כדי הקלדה</small></h3>
+      <div class="qsec">מסגרות ביחידה</div>
+      <div class="ngrid">${['teams','platoons','companies','battalions','sectors'].filter(k=>f.has(k)).map(k=>inp('n',k,'מספר '+FW_LBL[k])).join('')}</div>
+      <div class="qsec">מה קיים היום – כיתות</div>
+      <div class="ngrid">${CLASS_CATS.map(cc=>inp('h','cls_'+cc.k,cc.label.replace('כיתה ','כיתות ').replace('כיתת','כיתות').replace('אולם גדודי','אולם גדודי'))).join('')}</div>
+      ${R.basis?`<div class="qsec">מה קיים היום – מטווחים</div><div class="ngrid">${R.split?R.split.map(m=>inp('h','rng'+m,`מטווחי ${m} מ'`)).join(''):inp('h','rng','מטווחים')}</div>`:''}
+      ${P.needs.length?`<div class="qsec">מה קיים היום – לש"ב ומתקני אימון</div><div class="ngrid">${P.needs.map(nd=>inp('h','lsb_'+nd.t,LSB_TYPES[nd.t].label)).join('')}</div>`:''}
+      <p class="note">מספר המסגרות – כמה צוותים / מחלקות / פלוגות יש ביחידה. אם שדה ריק, המערכת מציינת מה חסר כדי לחשב.</p>
+    </section>
+    <div id="stdRes">${stdResults(u,c)}</div>
+  </div>`;
+}
+function stdResults(u,c){
+  c=c||stdCalc(u);
+  const tbl=(rows)=>`<table class="rt"><thead><tr><th>קטגוריה</th><th>התקן</th><th>חישוב</th><th>נדרש</th><th>קיים</th><th>פער</th></tr></thead><tbody>${rows.map(r=>`<tr class="${r.na?'na':''}"><td class="nm">${esc(r.label)}${r.note?`<small>${esc(r.note)}</small>`:''}</td><td>${esc(r.rule)}${r.ratio?` <span class="ratio" dir="ltr">${r.ratio}</span>`:''}</td><td class="calc">${calcHtml(r)}</td><td class="num big">${r.req??'—'}</td><td class="num">${r.have??'—'}</td><td>${gchip(r)}</td></tr>`).join('')}</tbody></table>`;
+  const qual=dom=>{ const cs=unitChecks(u.id,dom), have=c.tot[dom].have;
+    return `<div class="qual"><div class="qhead"><b>איכותי</b><span class="muted">נבדקו ${cs.length}${have?` מתוך ${have} קיימים`:''}</span><button class="linkbtn" type="button" onclick="stdCheckForm('${u.id}','${dom}')">+ בדיקה איכותית</button></div>
+      ${cs.map(ch=>{ const s=checkScore(ch); return `<a class="qrow" href="#std/q/${ch.id}"><span><b>${esc(ch.name)}</b><small>${esc(TEMPLATES[ch.tpl].name)}</small></span><div class="pbar"><div class="bar"><i style="width:${s.pct}%"></i></div><b>${s.pct}%</b></div><span class="pill ${s.tone}"><i class="dot"></i>${s.status}</span></a>`; }).join('')||'<p class="note" style="margin:4px 0 0">עוד לא נבדק אף מתקן מול התקן האיכותי.</p>'}</div>`; };
+  const pipe=(dom,miss)=>{ const ps=stdPipeline(u,dom); if(!ps.length && !miss) return '';
+    const add=ps.reduce((a,p)=>a+(p.invQty||1),0), after=Math.max(0,miss-add);
+    return `<div class="pipe-note">${ps.length?`<div><b>בתהליך במערכת:</b> ${ps.map(p=>`<a href="#id/${p.id}">${esc(p.name)} (+${p.invQty||1}, ${p.pct==null?'טרם עודכן':p.pct+'%'})</a>`).join(' · ')}</div>`:''}
+      ${miss?`<div>${ps.length?`אחרי הפרויקטים: ${after?`<b class="neg">חסר ${after}</b>`:'<b class="pos">הפער נסגר</b>'}`:'<b class="neg">אין פרויקט פתוח שסוגר את הפער.</b>'}${after?` <button class="mu-btn sm" type="button" onclick="stdOpenProject('${u.id}','${dom}',${after})">${IC.plus}פתיחת פרויקט</button>`:''}</div>`:''}</div>`; };
+  const card=(dom,rows,notes)=>{ const t=c.tot[dom];
+    if(!rows.length) return `<section class="card rcard"><div class="rhead2"><h3>${DOMAINS[dom]}</h3></div><p class="note">${(notes||[]).join(' ')||'אין תקן ליחידה הזו בתחום הזה.'}</p>${qual(dom)}</section>`;
+    return `<section class="card rcard"><div class="rhead2"><h3>${DOMAINS[dom]}</h3><div class="rsum"><span>נדרש <b>${t.req}</b></span><span>קיים <b>${t.have}</b></span>${totChip(t)}</div></div>
+      ${tbl(rows)}
+      ${(notes||[]).map(x=>`<p class="note">${esc(x)}</p>`).join('')}
+      ${pipe(dom,t.miss)}${qual(dom)}</section>`; };
+  const warn=c.missing.length?`<div class="banner warnb">${IC.warn}<div><b>חסרים נתונים לחישוב</b><span>מלאו: ${c.missing.map(k=>'מספר '+FW_LBL[k]).join(', ')}.</span></div></div>`:'';
+  return warn+card('cls',c.cls,c.subs)+card('rng',c.rng,c.rngNotes)+card('lsb',c.lsb,c.lsb.some(r=>r.unknownStd)?['בסוגי מתקנים שמסומנים "תקן לא נקבע" – במסמך מופיע "?" ולכן לא מחושב חוסר.']:[]);
+}
+function bindStdUnit(id){
+  const u=DB.std.units.find(x=>x.id===id); if(!u) return; let t;
+  $$('.qcard input[data-k]').forEach(inp=>{
+    inp.addEventListener('input',()=>{ const o=inp.dataset.g==='n'?(u.n=u.n||{}):(u.have=u.have||{}); const v=inp.value===''?null:Math.max(0,Math.floor(+inp.value)); if(v==null) delete o[inp.dataset.k]; else o[inp.dataset.k]=v;
+      $('#stdRes').innerHTML=stdResults(u); clearTimeout(t); t=setTimeout(save,300); });
+    inp.addEventListener('change',()=>logIt('תו תקן',`${u.name}: ${inp.closest('label').querySelector('span').firstChild.textContent} = ${inp.value||'—'}`));
+  });
+}
+
+/* ---------- בדיקה איכותית ---------- */
+function viewStdCheck(id){
+  const ch=DB.std.checks.find(x=>x.id===id); if(!ch) return '<div class="card placeholder">הבדיקה לא נמצאה</div>';
+  const T=TEMPLATES[ch.tpl], u=DB.std.units.find(x=>x.id===ch.unit)||{name:''}, s=checkScore(ch), v=ch.v||{}, notes=ch.notes||{};
+  const seg=it=>`<div class="tri" data-k="${it.k}">${[['y','עומד'],['p','חלקי'],['n','חסר']].map(([x,l])=>`<button type="button" data-v="${x}" class="${v[it.k]===x?'on '+x:''}">${l}</button>`).join('')}</div>`;
+  return `
+  <div class="crumbs"><a href="#std">תו תקן</a> / <a href="#std/u/${u.id}">${esc(u.name)}</a> / ${esc(ch.name)}</div>
+  <div class="head"><div><h1 class="h1">${esc(ch.name)}</h1><div class="chips"><span class="chip">${esc(T.name)}</span><span class="chip">${DOMAINS[T.domain]}</span>${ch.date?`<span class="chip">נבדק ${esc(ch.date)} · ${esc(ch.by||'')}</span>`:''}</div></div>
+    <div class="btnrow"><button class="mu-btn" type="button" onclick="stdCheckEdit('${ch.id}')">${IC.edit}שם / מחיקה</button><a class="mu-btn mu-btn--primary" href="#std/u/${u.id}">סיום</a></div></div>
+  ${T.purpose?`<div class="banner">${IC.info}<div><b>ייעוד המתקן</b><span>${esc(T.purpose)}</span></div></div>`:''}
+  <div class="stwrap">
+    <div id="chkList">${T.groups.map(g=>`<section class="card cgroup"><h3>${esc(g.name)}${g.note?` <small class="neg">${esc(g.note)}</small>`:''}</h3>
+      ${g.items.map(it=>`<div class="citem ${v[it.k]?'is-'+v[it.k]:''}"><div class="ctext"><b>${esc(it.label)}${it.must?'<span class="tag must">חובה</span>':''}${it.opt?`<span class="tag opt">${esc(it.optNote||'אופציונלי')}</span>`:''}</b>${tplStd(ch.tpl,it)!==it.label?`<span>${esc(tplStd(ch.tpl,it))}</span>`:''}
+        ${v[it.k]&&v[it.k]!=='y'?`<input class="cnote" type="text" data-note="${it.k}" placeholder="מה חסר בפועל?" value="${esc(notes[it.k]||'')}">`:''}</div>${seg(it)}</div>`).join('')}</section>`).join('')}</div>
+    <aside class="side">
+      <section class="card live"><h3>תוצאה</h3>
+        <div class="prog"><div class="mu-cprog" data-mu-animated-circular-progress-bar data-value="${s.pct}"></div><div class="cur">עמידה בתקן<b><span class="pill ${s.tone}"><i class="dot"></i>${s.status}</span></b><span style="display:block;margin-top:8px">עומד ${s.cnt.y} · חלקי ${s.cnt.p} · חסר ${s.cnt.n}${s.cnt.open?` · לא נבדק ${s.cnt.open}`:''}</span></div></div>
+        ${s.yard!=null?`<div class="row2"><span>עזרי אימון (חצר אחורית)</span><b>${s.yard}%</b></div>`:''}
+        <p class="note">עומד = 1, חלקי = ½, חסר = 0. פריטים אופציונליים לא נספרים. פריט חובה שלא עומד – המתקן לא עומד בתקן.</p></section>
+      <section class="card"><h3>מה חסר <small>${s.miss.length}</small></h3>${s.miss.length?`<ul class="blist">${s.miss.map(m=>`<li><b>${esc(m.it.label)}</b>${m.x==='p'?' (חלקי)':''}${m.separate?' · עזרי אימון':''}${(m.note||tplStd(ch.tpl,m.it))!==m.it.label?`<br><small>${esc(m.note||tplStd(ch.tpl,m.it))}</small>`:''}</li>`).join('')}</ul>`:'<p class="note" style="margin:0">לא סומנו חוסרים.</p>'}</section>
+    </aside>
+  </div>`;
+}
+function bindStdCheck(id){
+  const ch=DB.std.checks.find(x=>x.id===id); if(!ch) return;
+  const redraw=()=>{ const y=scrollY; $('#view').innerHTML=viewStdCheck(id); bindStdCheck(id); MU['animated-circular-progress-bar'](); scrollTo(0,y); };
+  $('#chkList').addEventListener('click',e=>{ const b=e.target.closest('.tri button'); if(!b) return; const k=b.closest('.tri').dataset.k; ch.v=ch.v||{};
+    ch.v[k]= ch.v[k]===b.dataset.v ? undefined : b.dataset.v; if(!ch.v[k]) delete ch.v[k];
+    const u=getUser(); ch.date=new Date().toLocaleDateString('he-IL',{day:'2-digit',month:'2-digit',year:'2-digit'}).replace(/\//g,'.'); ch.by=u?(u.name||u.role):''; save(); redraw(); });
+  $('#chkList').addEventListener('change',e=>{ const i=e.target.closest('[data-note]'); if(!i) return; ch.notes=ch.notes||{}; ch.notes[i.dataset.note]=i.value.trim(); save(); });
+}
+function stdCheckForm(uid,dom){
+  const u=DB.std.units.find(x=>x.id===uid), c=stdCalc(u);
+  const opts=Object.entries(TEMPLATES).filter(([,t])=>t.domain===dom).map(([k,t])=>[k,t.name]);
+  let def=dom==='rng'?'rangeOpen':dom==='cls'?'cls40':'lsbLow';
+  if(dom==='lsb'){ const r=c.lsb.find(x=>LSB_TYPES[x.t].tpl); if(r) def=LSB_TYPES[r.t].tpl; }
+  const n=unitChecks(uid,dom).length+1;
+  openSheet('בדיקה איכותית חדשה',`<div class="form">${fld('לפי איזה תקן','tpl',def,{type:'select',options:opts,cls:'full'})}${fld('שם המתקן','cname',`${dom==='cls'?'כיתה':dom==='rng'?'מטווח':'מתקן'} ${n}`,{cls:'full',ph:'לדוגמה: כיתה 3 בבניין 12'})}
+    <p class="note full">לכל מתקן קיים עושים בדיקה נפרדת. בכיתות בוחרים את המפרט לפי גודל הכיתה.</p></div>`,
+  ()=>{ const ch={ id:'q'+Date.now().toString(36), unit:uid, tpl:fv('tpl'), name:fv('cname')||'מתקן', v:{}, notes:{} }; DB.std.checks.push(ch); logIt('תו תקן',`${u.name}: נפתחה בדיקה איכותית – ${ch.name}`); save(); go('std/q/'+ch.id); },'פתיחת בדיקה');
+}
+function stdCheckEdit(id){
+  const ch=DB.std.checks.find(x=>x.id===id);
+  openSheet('הבדיקה',`<div class="form">${fld('שם המתקן','cname',ch.name,{cls:'full'})}</div>`,()=>{ ch.name=fv('cname')||ch.name; save(); render(); },'שמירה',
+    `<button type="button" class="mu-btn danger" onclick="if(confirm('למחוק את הבדיקה?')){const u='${ch.unit}';DB.std.checks=DB.std.checks.filter(x=>x.id!=='${id}');logIt('תו תקן','נמחקה בדיקה איכותית');MU.closeSheet();go('std/u/'+u);}">מחיקה</button>`);
+}
+
+/* ---------- יחידה: חדשה / עריכה ---------- */
+function stdUnitForm(id){
+  const u=id?DB.std.units.find(x=>x.id===id):{ profile:LSB_PROFILES[0].id, training:LSB_PROFILES[0].training, range:LSB_PROFILES[0].range, corps:LSB_PROFILES[0].corps, name:'' };
+  const units=[''].concat([...new Set(DB.projects.map(p=>p.unit))]);
+  openSheet(id?'פרטי יחידה':'יחידה חדשה',`<div class="form">
+    ${fld('שורה בטבלת אפיון הצרכים','profile',u.profile,{type:'select',options:LSB_PROFILES.map(p=>[p.id,`${p.corps} · ${p.unit}`]),cls:'full'})}
+    ${fld('שם היחידה','uname',u.name,{cls:'full',ph:'לדוגמה: בא"ח גולני'})}
+    ${fld('חיל','ucorps',u.corps)}${fld('סוג הכשרה','utrain',u.training,{type:'select',options:TRAININGS})}
+    ${fld('כלל מטווחים','urange',u.range,{type:'select',options:Object.entries(RANGE_RULES).map(([k,r])=>[k,r.who?`${r.label} (${r.who})`:r.label]),cls:'full'})}
+    ${fld('קישור ליחידה במסך הפרויקטים','uproj',u.projUnit||'',{type:'select',options:units.map(x=>[x,x||'ללא קישור']),cls:'full'})}
+    <p class="note full">בחירת שורה מטבלת אפיון הצרכים ממלאת את החיל, סוג ההכשרה וכלל המטווחים. אפשר לשנות. הקישור לפרויקטים מאפשר להראות אילו פרויקטים פתוחים יסגרו את הפער.</p></div>`,
+  ()=>{ const o=id?u:{ id:'s'+Date.now().toString(36), n:{}, have:{} };
+    Object.assign(o,{ profile:fv('profile'), name:fv('uname')||stdProfile({profile:fv('profile')}).unit, corps:fv('ucorps'), training:fv('utrain'), range:fv('urange'), projUnit:fv('uproj') });
+    if(!id) DB.std.units.push(o); logIt('תו תקן',`${id?'עודכנה':'נוספה'} יחידה: ${o.name}`); save(); go('std/u/'+o.id); },
+  id?'שמירה':'הוספה', id?`<button type="button" class="mu-btn danger" onclick="if(confirm('למחוק את היחידה ואת הבדיקות שלה?')){DB.std.units=DB.std.units.filter(x=>x.id!=='${id}');DB.std.checks=DB.std.checks.filter(c=>c.unit!=='${id}');logIt('תו תקן','נמחקה יחידה');MU.closeSheet();go('std');}">מחיקה</button>`:'');
+  setTimeout(()=>{ const s=$('#f_profile'); if(s) s.addEventListener('change',()=>{ const p=stdProfile({profile:s.value}); $('#f_ucorps').value=p.corps; $('#f_utrain').value=p.training; $('#f_urange').value=p.range; if(!id) $('#f_uname').value=p.unit; if(p.proj) $('#f_uproj').value=p.proj; }); },50);
+}
+function stdOpenProject(uid,dom,qty){
+  const u=DB.std.units.find(x=>x.id===uid);
+  const map={ rng:{name:`הקמת ${qty} מטווחים`,inv:'ranges',track:'aviv'}, cls:{name:`הקמת ${qty} כיתות`,inv:'classes',track:'class'}, lsb:{name:`הקמת ${qty} מתקני לש"ב`,inv:'lashabEtz',track:'aviv'} }[dom];
+  const reg=(DB.projects.find(p=>p.unit===u.projUnit)||{}).region||'';
+  projectForm(null,{ region:reg, unit:u.projUnit||u.name, name:map.name, title:`${map.name} לפי תו התקן – ${u.name}`, track:map.track, invType:map.inv, invQty:qty, status:`פער מול תו התקן: חסרים ${qty}` });
+}
+function stdPrint(uid){ const w=window.open('','_blank'); if(!w) return; const u=DB.std.units.find(x=>x.id===uid);
+  w.document.write(`<html dir="rtl"><head><meta charset="utf-8"><title>תו תקן – ${esc(u.name)}</title><style>body{font-family:Heebo,Arial;padding:24px;color:#0E2236} h1{color:#103958} table{width:100%;border-collapse:collapse;margin:8px 0 18px} td,th{border:1px solid #ccd;padding:6px;text-align:right;font-size:13px} th{background:#103958;color:#fff} .gchip{font-weight:700} .no{color:#A35454}.ok{color:#4E7F5E} a{color:inherit;text-decoration:none} button,.qual{display:none}</style></head><body><img src="${MU.EMBLEM}" width="56" style="float:left"><h1>תו תקן – ${esc(u.name)}</h1><p>${esc(u.corps)} · ${TRAIN_LBL[u.training]} · ${new Date().toLocaleDateString('he-IL')}</p>${stdResults(u)}</body></html>`);
+  w.document.close(); setTimeout(()=>w.print(),400); }
+
+/* ---------- התקנים במסמך ---------- */
+function viewStdRef(dom){
+  const tabs=`<div class="mu-seg" data-mu-segmented-control id="refsel" role="group" aria-label="תחום">${Object.entries(DOMAINS).map(([k,l])=>`<button type="button" data-value="${k}" aria-pressed="${k===dom}">${l}</button>`).join('')}</div>`;
+  const tplCard=(tid)=>{ const T=TEMPLATES[tid]; return `<details class="card tpl"><summary><b>${esc(T.name)}</b>${T.blanks?'<span class="tag opt">יש שדות להשלמה</span>':''}${T.purpose?`<small>${esc(T.purpose)}</small>`:''}</summary>
+    ${T.groups.map(g=>`<div class="tg"><div class="qsec">${esc(g.name)}${g.note?` – <span class="neg">${esc(g.note)}</span>`:''}</div>${g.items.map(it=>`<div class="ti"><b>${esc(it.label)}${it.must?'<span class="tag must">חובה</span>':''}${it.opt?`<span class="tag opt">${esc(it.optNote||'אופציונלי')}</span>`:''}</b>${T.blanks&&/___/.test(it.std)?`<input type="text" class="blank" data-t="${tid}.${it.k}" value="${esc(tplStd(tid,it))}">`:`<span>${esc(tplStd(tid,it))}</span>`}</div>`).join('')}</div>`).join('')}</details>`; };
+  let body='';
+  if(dom==='cls') body=`<section class="card"><h3>תו תקן כמות – כיתות <small>המספר משמאל = כיתות, מימין = מסגרות. תמיד מעגלים למעלה</small></h3>
+    <table class="rt ref"><thead><tr><th></th>${TRAININGS.map(([,l])=>`<th>${l}</th>`).join('')}</tr></thead><tbody>
+    ${['team','platoon','company'].map(k=>`<tr><td class="nm">${({team:'מסגרת צוותית',platoon:'מסגרת מחלקתית',company:'מסגרת פלוגתית'})[k]}</td>${TRAININGS.map(([t])=>{ const r=CLASS_RATIO[k][t]; return `<td>${r?`<span class="ratio" dir="ltr">${r[0]}:${r[1]}</span> <small>${r[0]===1?'כיתה':r[0]+' כיתות'} ל-${r[1]}</small>`:'0'}</td>`; }).join('')}</tr>`).join('')}
+    <tr><td class="nm">הדב"ם מחלקתית</td>${TRAININGS.map(([t])=>`<td>${DABAM_PER_UNIT[t]} <small>ליחידה</small></td>`).join('')}</tr>
+    <tr><td class="nm">אולם גדודי</td><td colspan="4">1 ליחידה [ע"פ מאפייני יחידה ומגמות – עד 120/300/500]</td></tr></tbody></table></section>
+    <h3 class="sech">תקן איכותי – מפרט אמצעים לפי גודל כיתה</h3>${['cls20','cls40','cls60','cls120','cls160','dab20','dab40','dab60','clsGeneral'].map(tplCard).join('')}`;
+  if(dom==='rng') body=`<section class="card"><h3>תו התקן למטווחים</h3><div class="rules">${Object.values(RANGE_RULES).filter(r=>r.basis).map(r=>`<div class="rule"><b>${esc(r.label)}</b><span>${esc(r.who)}</span></div>`).join('')}</div><p class="note">* ${esc(RANGE_NOTE)}</p>
+    <p class="note">סוגי מטווחים ביבשה: מטווח פתוח/סגור, מטווח בטון, מטווח 180, מטווח מתרסים. במסמך יש תקן איכותי למטווח קבוע פתוח ולמטווח קבוע סגור.</p></section>
+    <h3 class="sech">תקן איכותי</h3>${['rangeOpen','rangeClosed'].map(tplCard).join('')}`;
+  if(dom==='lsb') body=`<section class="card"><h3>אפיון צרכים להכשרות לש"ב</h3><table class="rt ref"><thead><tr><th>חיל</th><th>יחידה</th><th>מאפייני כשירות</th><th>סוג מבנה וכמות</th></tr></thead><tbody>
+    ${LSB_PROFILES.filter(p=>p.needs.length).map(p=>`<tr><td>${esc(p.corps)}</td><td class="nm">${esc(p.unit)}</td><td>${esc(p.ready||'')}</td><td>${p.needs.map(nd=>`${LSB_TYPES[nd.t].label}: <b>${nd.q??'?'}</b>${nd.per==='company'?' לפלוגה':nd.per==='battalion'?' לגדוד':''}${nd.note?` <small>(${esc(nd.note)})</small>`:''}`).join('<br>')}</td></tr>`).join('')}</tbody></table></section>
+    <section class="card"><h3>תכולות במתקן לש"ב</h3><div class="contents">${LSB_CONTENTS.map(x=>`<span class="chip">${esc(x)}</span>`).join('')}</div></section>
+    <h3 class="sech">תקן איכותי</h3>${['lsbLow','lsbTzakap','lsbBn','shootRoom','lsbMech'].map(tplCard).join('')}`;
+  return `<div class="crumbs"><a href="#std">תו תקן</a> / התקנים במסמך</div>
+  <div class="head"><div><h1 class="h1">התקנים במסמך</h1><p class="lead">"תו תקן תשתיות אימונים ביבשה" – פברואר 2026. אלה הכללים שהמערכת מחשבת לפיהם.</p></div>${tabs}</div>${body}`;
+}
+function bindStdRef(){ const s=$('#refsel'); if(s) s.addEventListener('change',e=>go('std/ref/'+e.detail.value));
+  $$('.blank').forEach(i=>i.addEventListener('change',()=>{ DB.std.tplText[i.dataset.t]=i.value.trim(); logIt('תו תקן',`עודכן תקן: ${i.dataset.t}`); save(); })); }
+
+/* ---------- ממצא לדשבורד וייצוא ---------- */
+function stdFinding(){
+  const f=DB.std.units.filter(stdFilled); if(!f.length) return null;
+  const t={cls:0,rng:0,lsb:0}; let units=0; f.forEach(u=>{ const c=stdCalc(u); let any=false; Object.keys(t).forEach(d=>{ t[d]+=c.tot[d].miss; if(c.tot[d].miss) any=true; }); if(any) units++; });
+  if(!t.cls&&!t.rng&&!t.lsb) return { sev:'ok', href:'#std', title:'תו תקן: היחידות שמולאו עומדות בתקן הכמותי', body:`${f.length} יחידות מולאו.` };
+  return { sev:'warn', href:'#std', title:`תו תקן: חסרים ${[t.cls&&t.cls+' כיתות',t.rng&&t.rng+' מטווחים',t.lsb&&t.lsb+' מתקני לש"ב'].filter(Boolean).join(', ')}`, body:`ב-${units} מתוך ${f.length} היחידות שמולאו.` };
+}
+function stdExcel(add){
+  const rows=[['יחידה','חיל','הכשרה','תחום','קטגוריה','התקן','חישוב','נדרש','קיים','פער','הערה']];
+  DB.std.units.filter(stdFilled).forEach(u=>{ const c=stdCalc(u); [['cls',c.cls],['rng',c.rng],['lsb',c.lsb]].forEach(([d,rs])=>rs.forEach(r=>rows.push([u.name,u.corps,TRAIN_LBL[u.training],DOMAINS[d],r.label,r.rule,r.calc?r.calc.expr:'',r.req??'',r.have??'',r.gap==null?'':(r.gap<0?`חסר ${-r.gap}`:r.gap>0?`עודף ${r.gap}`:'תקין'),r.note||'']))); });
+  add('תו תקן – כמותי',rows,[22,10,12,14,18,24,24,8,8,10,30]);
+  const q=[['יחידה','מתקן','תקן','תחום','ציון %','מצב','עומד','חלקי','חסר','לא נבדק','מה חסר']];
+  DB.std.checks.forEach(ch=>{ const u=DB.std.units.find(x=>x.id===ch.unit)||{name:''}, T=TEMPLATES[ch.tpl]; if(!T) return; const s=checkScore(ch);
+    q.push([u.name,ch.name,T.name,DOMAINS[T.domain],s.pct,s.status,s.cnt.y,s.cnt.p,s.cnt.n,s.cnt.open,s.miss.map(m=>m.it.label+(m.note?` (${m.note})`:'')).join('; ')]); });
+  add('תו תקן – איכותי',q,[22,18,30,12,8,20,7,7,7,8,60]);
+}
+function stdSlides(pptx,frame,R,W){
+  const us=DB.std.units.filter(stdFilled); if(!us.length) return;
+  const tot={cls:{req:0,have:0,miss:0},rng:{req:0,have:0,miss:0},lsb:{req:0,have:0,miss:0}};
+  const body=us.map(u=>{ const c=stdCalc(u);
+    const cell=d=>{ const t=c.tot[d]; tot[d].req+=t.req; tot[d].have+=t.have; tot[d].miss+=t.miss; if(!t.n) return {text:'—',options:{align:'center',color:'6B7B8C'}};
+      return {text:`${t.have}/${t.req}${t.miss?`  ·  חסר ${t.miss}`:''}`,options:{align:'center',color:t.miss?'A35454':'4E7F5E',bold:!!t.miss}}; };
+    const q=avgQual(unitChecks(u.id));
+    const cl=cell('cls'), rg=cell('rng'), ls=cell('lsb');
+    return [{text:q==null?'—':q+'%',options:{align:'center'}},ls,rg,cl,{text:TRAIN_LBL[u.training],options:{align:'center'}},{text:u.name,options:{bold:true}}]; });
+  const per=12;
+  for(let k=0;k<body.length;k+=per){ const s=pptx.addSlide(); frame(s,'תו תקן – פער מול התקן לפי יחידה');
+    const hdr=['איכותי','לש"ב (קיים/נדרש)','מטווחים (קיים/נדרש)','כיתות (קיים/נדרש)','הכשרה','יחידה'].map(h=>({text:h,options:{bold:true,color:'FFFFFF',fill:{color:'103958'},align:'center',fontSize:12}}));
+    s.addTable([hdr,...body.slice(k,k+per)],{x:0.5,y:1.3,w:W-1,colW:[1.3,2.2,2.2,2.2,1.6,2.83],fontFace:'Heebo',fontSize:11,color:'0E2236',border:{type:'solid',color:'C9D2DC',pt:0.75},valign:'middle',align:'right',rtlMode:true,autoPage:false,rowH:0.38});
+    if(k+per>=body.length) s.addText(`סה"כ חוסר: ${tot.cls.miss} כיתות · ${tot.rng.miss} מטווחים · ${tot.lsb.miss} מתקני לש"ב  (חישוב לפי תו התקן, מעוגל למעלה)`,{...R,x:0.5,y:6.45,w:W-1,h:0.4,fontSize:13,bold:true,color:'A35454'}); }
+}
+
 /* ===== ייצוא וייבוא: Excel ו-PowerPoint ===== */
 const PROJ_COLS = [
   ['id','מזהה'],['region','שייכות'],['unit','יחידה'],['name','שם הפרויקט וסוג מתקן'],['title','תיאור לשקף'],['year','שנת עבודה'],['amat','כחלק מעמ"ט?'],
@@ -1738,6 +2311,7 @@ function exportExcel(){
       [],['','סה"כ',rows.reduce((a,b)=>a+(+b.cost||0),0),'','','','',`נדרש ${t.required} · תוקצב ${t.allocated} · בקובץ התקציבים ${t.fileAmount??''}`]],[8,40,10,10,10,12,12,60,30]); });
   add('שלבים',[['מזהה','פרויקט','מספר שלב','שלב','הושלם','תאריך','מי עדכן','הערה'],...DB.projects.flatMap(p=>STAGES.map((s,i)=>[p.id,projTitle(p),s.n,s.name,p.st.done[i]?'כן':'',p.st.log[i].date,p.st.log[i].by,p.st.log[i].note]))],[8,34,8,24,8,10,14,40]);
   add('מלאי',[['סוג','קיים בפתיחה','נוסף ממסירות','סה"כ'],...DB.inventory.map(i=>[i.label,i.n,invCount(DB,i.key)-i.n,invCount(DB,i.key)])],[24,12,12,10]);
+  stdExcel(add);
   add('יומן',[['מועד','מי','פעולה','פירוט'],...DB.log.map(l=>[new Date(l.t).toLocaleString('he-IL'),l.by,l.action,l.detail])],[18,18,18,80]);
   XLSX.writeFile(wb,`תשתיות-הדרכה-${new Date().toISOString().slice(0,10)}.xlsx`);
   logIt('ייצוא','יוצא קובץ Excel');
@@ -1810,7 +2384,7 @@ function exportPPTX(opt={}){
   };
   const legend=s=>{ [['ייזום, תכנון, היתרים',PC.no],['תחילת עבודות',PC.wait],['לקראת סיום ומסירה',PC.ok]].forEach(([t,c],i)=>{ const x=2.4+i*1.9; s.addShape(pptx.ShapeType.ellipse,{x:x+1.55,y:7.08,w:0.16,h:0.16,fill:{color:c},line:{color:c}}); s.addText(t,{x:x,y:6.98,w:1.5,h:0.36,fontSize:9,color:PC.muted,align:'right',fontFace:FONT,rtlMode:true}); }); };
 
-  const sel = opt.sections || { cover:true, numbers:true, overview:true, cont:true, bach:true, zi:true, budget:true, cards:true };
+  const sel = opt.sections || { cover:true, numbers:true, overview:true, cont:true, bach:true, zi:true, budget:true, std:true, cards:true };
   const only = opt.only==='cards';
   if(!only && sel.cover){ const s=pptx.addSlide(); s.background={color:PC.navy};
     if(emblem) s.addImage({data:emblem,x:W/2-0.9,y:1.2,w:1.8,h:1.8});
@@ -1855,6 +2429,7 @@ function exportPPTX(opt={}){
       s.addTable([hdr,band,...body],{x:0.5,y:1.25,w:W-1,colW:[5.4,2.0,1.4,3.53],fontFace:FONT,color:PC.ink,border:{type:'solid',color:'8A97A6',pt:0.75},valign:'middle',align:'right',rtlMode:true,autoPage:false,rowH:0.38});
     } }); }
   const cardIds = opt.ids || (sel.cards?DB.projects.filter(p=>p.card&&p.card.summary).map(p=>p.id):[]);
+  if(!only && sel.std) stdSlides(pptx,frame,R,W);
   cardIds.forEach(id=>{ const p=DB.projects.find(x=>x.id===id); if(p) idSlide(pptx,p,frame,ring,R,W,H); });
   const name = only&&cardIds.length===1 ? `תעודת-זהות-${(DB.projects.find(p=>p.id===cardIds[0])||{}).unit||''}.pptx` : `סטטוס-תשתיות-${new Date().toISOString().slice(0,10)}.pptx`;
   return pptx.writeFile({fileName:name.replace(/["/\\]/g,'')}).then(()=>logIt('ייצוא','יוצאה מצגת PowerPoint'));
@@ -1906,6 +2481,7 @@ function viewDeck(){
       ${opt('bach','תר"ש אביב – באח"ים',`${n('bach')} פרויקטים`)}
       ${opt('zi','תר"ש אביב – יחידות ז"י',`${n('zi')} פרויקטים`)}
       ${opt('budget','סיכום תקציב שנה"ע','טבלה לכל עולם תקציב')}
+      ${opt('std','תו תקן',`סיכום כמותי ואיכותי לכל יחידה שמולאה (${DB.std.units.filter(stdFilled).length} יחידות)`)}
       ${opt('cards','תעודות זהות',`${cards.length} פרויקטים עם תעודה מלאה: ${cards.map(p=>esc(p.unit)).join(', ')||'—'}`)}
     </section>
     <section class="card"><h3>איך זה עובד</h3>
@@ -1960,7 +2536,7 @@ function render(){
   const [v,...rest]=(location.hash.slice(1)||'dash').split('/'); const arg=rest[0];
   if(STAGE_FOR && !(v==='stages'&&arg===STAGE_FOR)){ const p=DB.projects.find(x=>x.id===STAGE_FOR); if(p&&STAGE_SNAP) p.st=JSON.parse(STAGE_SNAP); STAGE_FOR=null; }
   refresh(DB);
-  const V={ dash:()=>viewDash(), projects:()=>viewProjects(arg), new:()=>viewProjects(), id:()=>viewId(arg), stages:()=>viewStages(arg), budget:()=>viewBudget(arg||'aviv'), inventory:viewInventory, deck:viewDeck, log:viewLog };
+  const V={ dash:()=>viewDash(), projects:()=>viewProjects(arg), new:()=>viewProjects(), id:()=>viewId(arg), stages:()=>viewStages(arg), budget:()=>viewBudget(arg||'aviv'), inventory:viewInventory, deck:viewDeck, log:viewLog, std:()=>viewStd(rest[0],rest[1]) };
   $('#view').innerHTML=(V[v]||V.dash)();
   const tab={id:'projects',stages:'projects',new:'projects'}[v]||v;
   $$('#tabs a').forEach(b=>b.setAttribute('aria-current',b.dataset.value===tab?'page':'false'));
@@ -1969,6 +2545,7 @@ function render(){
   const ts=$('#tsel'); if(ts) ts.addEventListener('change',e=>go('budget/'+e.detail.value));
   if(v==='projects'||v==='new') bindProjects();
   if(v==='stages') bindStages(arg);
+  if(v==='std'){ if(rest[0]==='u') bindStdUnit(rest[1]); else if(rest[0]==='q') bindStdCheck(rest[1]); else if(rest[0]==='ref') bindStdRef(); }
   if(v==='new') projectForm(null,{ region:rest[0]?decodeURIComponent(rest[0]):'', unit:rest[1]?decodeURIComponent(rest[1]):'' });
   if(v!=='stages') scrollTo(0,0);
   updateSaveBadge();
